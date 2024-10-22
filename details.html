@@ -4,21 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> smart ways</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/details.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <title>details</title>
     <link rel="stylesheet" href="./css/all.css" />
-    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" />
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js" defer></script>
-    <script src="./script.js" defer></script>
-    <!-- Add these lines in the <head> section -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./swiper-11.1.14/package/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./bootstrap-5.3.3-dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="./css/details.css">
+    <link rel="stylesheet" href="./css/style.css">
+   
 </head>
 
 <body>
@@ -36,32 +28,28 @@
                                 <a href="#"><i class="fas fa-mobile-alt"></i></a>
                             </div>
 
-                            <div id="deliveryCarousel" class="info carousel slide" data-ride="carousel"
-                                data-interval="false">
-                                <div class="carousel-inner">
-                                    <div class="carousel-item active">
-                                        <div class="delivery-info">
-                                            Free Delivery on orders over 99 QAR!
-                                            <a class="carousel-control-next" href="#deliveryCarousel" role="button"
-                                                data-slide="next">
-                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                            </a>
+                            <div class="delevery">
+                                <div class="swiper-container delevery-swiper">
+                                    <div class="swiper-wrapper">
+                                        <!-- Slide 1 -->
+                                        <div class="swiper-slide">
+                                            <div class="delivery-info">
+                                                Free Delivery on orders over 99 QAR!
+                                            </div>
+                                        </div>
+                                        <!-- Slide 2 -->
+                                        <div class="swiper-slide">
+                                            <div class="delivery-info">
+                                                Special offer: Buy 2 get 1 free!
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="carousel-item">
-                                        <div class="delivery-info">
-                                            Special offer: Buy 2 get 1 free!
-                                            <a class="carousel-control-next" href="#deliveryCarousel" role="button"
-                                                data-slide="next">
-                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                            </a>
-                                        </div>
-                                    </div>
+                                    <!-- Pagination -->
+                                
+                                    <!-- Navigation buttons -->
+                                    <div class="swiper-button-prev delevery-swiper-prev"></div> <!-- سهم لليسار -->
+                                    <div class="swiper-button-next delevery-swiper-next"></div> <!-- سهم لليمين -->
                                 </div>
-                                <a class="carousel-control-prev" href="#deliveryCarousel" role="button"
-                                    data-slide="prev">
-                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                </a>
                             </div>
 
                             <div class="language">
@@ -639,7 +627,7 @@
                             <img src="./imges/google.png" alt="Google Play">
                             <img src="./imges/app.png" alt="App Store">
                         </div>
-                        <div class="theqa ">
+                        <div class="theqa  ">
                             <img src="./imges/theqa.svg">
                         </div>
                     </div>
@@ -652,7 +640,10 @@
     </div>
 
     </div>
-
+    <script src="./js/script.js" defer></script>
+    <script src="./js/details.js" defer></script>
+    <script src="./swiper-11.1.14/package/swiper-bundle.min.js"></script>
+    <script src="./bootstrap-5.3.3-dist//js/bootstrap.min.js"></script>
 </body>
 
 </html>

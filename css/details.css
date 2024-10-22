@@ -20,8 +20,8 @@ a:hover {
 .breadcrumb {
     margin-bottom: 20px;
     font-size: 14px;
+    margin-top: 20px;
     color: #666;
-    background-color: white !important;
         gap: 15px;
 }
 
@@ -51,7 +51,7 @@ a:hover {
 
 .product-details {
     flex: 2;
-    padding: 10px 20px;
+ 
 }
 
 h1 {
@@ -389,19 +389,82 @@ margin-top: 100px;
     cursor: pointer;
 }
 
-/* سهم لليسار */
-.swiper-button-prev {
-    left: -20px; /* تحديد المسافة من اليسار، يمكنك تعديلها لتناسب التصميم */
-}
 
-/* سهم لليمين */
-.swiper-button-next {
-    right: -10px; /* تحديد المسافة من اليمين، يمكنك تعديلها لتناسب التصميم */
-}
 
 /* لضمان أن تكون الأسهم في المقدمة فوق الشرائح */
 .swiper-button-prev::after, .swiper-button-next::after {
     font-size: 18px;
     /* color: white; */
 }
+
+
+/* وسائل الإعلام للعرض على الأجهزة الصغيرة */
+@media (max-width: 1000px) {
+  
+    .product-container {
+        display: block;
+     
+    }
+    .quantity-selector {
+        display: block;
+        /* align-items: center; */
+        margin-bottom: 44px;
+        /* grid-template-columns: 50% 50%; */
+    }
+    .product-image {
+        margin-bottom: 20px;
+        width: 100%;
+    }
+    .quantity-selector .left {
+       
+        margin-bottom: 40px;
+
+    }
+
+    .add-to-cart {
+      
+        margin: auto;
+        width: 60%;
+     
+    }
+    .product-details {
+        flex: 2; /* السماح للتفاصيل بملء المساحة */
+    }
+
+    .quantity-selector {
+        flex-direction: row; /* ترتيب العناصر أفقيًا */
+    }
+    .delivery-info-clock {
+       
+        width: 100%;
+        margin-bottom: 70px;
+        
+        padding: 20px;
+        font-size: 14px;
+        
+        
+    }
+    .accordion-content ul li {
+       
+        font-size: 15px;
+    }
+    .purchased-together {
+        display: block;
+        text-align: center;
+    }
+    .frequently-content {
+        display: block;
+     
+    }
+    .purchased-together img {
+        width: 128px;
+        margin: 0 10px;
+        margin-bottom: 15px;
+    }
+    .product-history h3 {
+        font-size: 12px;
+       
+    }
+}
+
 
