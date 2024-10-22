@@ -1,0 +1,407 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    
+    margin: 0;
+}
+
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Breadcrumb */
+.breadcrumb {
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #666;
+    background-color: white !important;
+        gap: 15px;
+}
+
+/* Product Container */
+.product-container {
+    display: flex;
+   
+    margin: 0 auto;
+  
+    padding: 20px;
+    border-radius: 10px;
+   
+}
+
+.product-image {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 
+}
+
+.product-image img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-details {
+    flex: 2;
+    padding: 10px 20px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.brand {
+    font-size: 18px;
+    color: #888;
+    margin-bottom: 20px;
+}
+
+.rating {
+    margin-bottom: 20px;
+}
+.rating  span{
+   
+}
+.rating  span i{
+   color: #EBBF20;
+}
+
+
+.price {
+    font-size: 24px;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.stock-status {
+    color: green;
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+.stock-status i{
+    border-radius: 50%;
+    background-color: green;
+    color: white;
+    padding: 6px;
+
+    font-size: 12px;
+}
+
+/* Quantity Selector */
+.quantity-selector {
+    display: grid;
+    align-items: center;
+    margin-bottom: 44px;
+    grid-template-columns: 50% 50%;
+}
+/* Quantity Selector */
+.quantity-selector .left{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.quantity-selector .btn-selector {
+    color: #fff;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    margin-right: 10px;
+    border-radius: 50%;
+    font-size: 30px;
+    color: black;
+    width: 50px;
+    border: 1px solid black;
+    height: 50px;
+}
+
+.quantity-selector input {
+    width: 50px;
+    text-align: center;
+    padding: 5px;
+}
+
+/* Add to Cart Button */
+.add-to-cart {
+    background-color: black;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 49px;
+    height: 57px;
+    font-size: 22px;
+    transition: 0.5s;
+    border: none;
+}
+
+.add-to-cart:hover {
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+}
+
+.delivery-info-clock {
+    background-color: #f6f6f6;
+    width: 90%;
+    margin-bottom: 70px;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+    font-size: 21px;
+    margin-bottom: 70px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 2px 0px black;
+}
+.delivery-info i{
+    margin-right: 10px;
+    font-size: 25px;
+}
+
+/* Accordion */
+.accordion {
+    margin-bottom: 20px;
+}
+
+.accordion-item {
+    margin-bottom: 10px;
+}
+
+.accordion-item h3 {
+    padding: 22px;
+    cursor: pointer;
+    font-size: 17px;
+}
+.accordion-content ul{
+    
+}
+.accordion-content ul li{
+    list-style: decimal;
+    margin-bottom: 10px;
+}
+/* Wishlist Button */
+.wishlist-btn {
+    background-color: white;
+    color: black;
+    width: 90%;
+    border: 1px solid #891f2b;
+    cursor: pointer;
+    margin: auto;
+    padding: 14px;
+    font-size: 20px;
+    margin-top: 20px;
+     text-align: center;
+}
+.wishlist-btn i{
+    margin-right: 10px;
+}
+
+/* Frequently Purchased Together */
+.frequently-purchased {
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    /* width: 60%; */
+    border-radius: 10px;
+}
+.frequently-content {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    align-items: center;
+}
+.purchased-together {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    justify-content: left;
+    gap: 11px;
+    margin-top: 31px;
+}
+.accordion-item{
+    border: none !important;
+    border-bottom: 1px solid #f1f1f1 !important;
+}
+.purchased-together img {
+    width: 151px;
+    margin: 0 10px;
+}
+
+.add-all-to-cart {
+    background-color: black;
+    color: #fff;
+    padding: 10px 20px;
+    width: 204px;
+    border: none;
+    height: 64px;
+    cursor: pointer;
+    font-size: 21px;
+    font-weight: bolder;
+    margin-top: 10px;
+}
+span.plus {
+    font-size: 30px;
+    cursor: pointer;
+}
+span.mark {
+    font-size: 19px;
+    color: black;
+    font-weight: bold;
+}
+.add-all-to-cart:hover {
+    background-color: #0056b3;
+}
+
+/* Reviews Section */
+.reviews-section {
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.review {
+    margin-bottom: 20px;
+}
+
+.review p {
+    margin: 5px 0;
+}
+/* Accordion Styles */
+.accordion {
+    margin-top: 20px;
+}
+
+.accordion-item {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.accordion-title {
+   
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.accordion-title:hover {
+    background-color: #e1e1e1;
+}
+
+.accordion-content {
+    padding: 10px;
+    background-color: #fff;
+    display: none; /* Hide content by default */
+}
+
+.arrow {
+    font-size: 12px;
+    transition: transform 0.3s ease;
+}
+
+/* Rotate arrow when active */
+.accordion-item.active .arrow {
+    transform: rotate(180deg);
+}
+
+.accordion-item.active .accordion-content {
+    display: block; /* Show content when active */
+}
+/* أنماط العنوان */
+.accordion-header {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.accordion-icon {
+    font-size: 20px;
+    transition: transform 0.3s ease;
+}
+
+/* إخفاء المحتوى في البداية */
+.accordion-content {
+    display: none;
+    margin-top: 10px;
+}
+
+/* أنماط لعرض المحتوى عند الفتح */
+.accordion-content.active {
+    display: block;
+}
+
+/* عند الفتح، يدور السهم للأعلى */
+.accordion-header.open .accordion-icon {
+    transform: rotate(180deg); /* يدور السهم للأعلى */
+}
+
+.product-history{
+    
+}
+.product-history h3{
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #0000009c;
+}
+.product-history h3 input{
+margin-right: 10px;
+font-size: 20px;
+}
+.details-content .special-container .liked-content,.related-content{
+margin-top: 100px;
+}
+
+
+/* تأكد من أن الحاوية الخاصة بالسويبر لها position: relative */
+.swiper-container {
+    position: relative;
+}
+
+/* نمط الأسهم */
+.swiper-button-prev, .swiper-button-next {
+    /* background-color: ; */
+    /* border-radius: 50%; */
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+    color: black;
+    font-size: 18px;
+    /* height: 40px; */
+    /* width: 40px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%; /* تحديد موقعها في منتصف ارتفاع السويبر */
+    transform: translateY(-50%); /* لجعل السهم في منتصف الارتفاع تمامًا */
+    z-index: 10;
+    cursor: pointer;
+}
+
+/* سهم لليسار */
+.swiper-button-prev {
+    left: -20px; /* تحديد المسافة من اليسار، يمكنك تعديلها لتناسب التصميم */
+}
+
+/* سهم لليمين */
+.swiper-button-next {
+    right: -10px; /* تحديد المسافة من اليمين، يمكنك تعديلها لتناسب التصميم */
+}
+
+/* لضمان أن تكون الأسهم في المقدمة فوق الشرائح */
+.swiper-button-prev::after, .swiper-button-next::after {
+    font-size: 18px;
+    /* color: white; */
+}
+

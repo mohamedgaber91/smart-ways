@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> smart ways</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/details.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/all.css" />
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js" defer></script>
+    <script src="./script.js" defer></script>
+    <!-- Add these lines in the <head> section -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="content">
+        <div>
+            <!-- Header Section -->
+            <header>
+                <div class="top-bar-container">
+                    <div class="special-container">
+                        <div class="top-bar">
+
+                            <div class="left-icons">
+                                <a href="#"><i class="fab fa-facebook"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fas fa-mobile-alt"></i></a>
+                            </div>
+
+                            <div id="deliveryCarousel" class="info carousel slide" data-ride="carousel"
+                                data-interval="false">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <div class="delivery-info">
+                                            Free Delivery on orders over 99 QAR!
+                                            <a class="carousel-control-next" href="#deliveryCarousel" role="button"
+                                                data-slide="next">
+                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="delivery-info">
+                                            Special offer: Buy 2 get 1 free!
+                                            <a class="carousel-control-next" href="#deliveryCarousel" role="button"
+                                                data-slide="next">
+                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#deliveryCarousel" role="button"
+                                    data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                </a>
+                            </div>
+
+                            <div class="language">
+                                <select>
+                                    <option value="en">English</option>
+                                    <option value="ar">العربية</option>
+                                </select>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="nav-container">
+                    <div class="special-container">
+                        <div class="navbar">
+                            <div class="logo">
+                                <img src="./imges/logo.png" alt="Logo">
+                            </div>
+                            <div class="search-bar">
+                                <input type="text" placeholder="Search for...">
+                                <button><i class="fas fa-search"></i></button>
+                            </div>
+                            <div class="nav-links">
+                                <a href="#"><i class="fa-regular fa-user"></i> Account</a>
+                                <a href="#"><i class="fa-regular fa-heart"></i> Wishlist</a>
+                                <a href="#"><i class="fa-solid fa-cart-shopping"></i> Cart (0)</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="header-container">
+
+                    <div class="special-container">
+
+                        <!-- Navigation Bar -->
+                        <nav>
+                            <ul class="section-links">
+                                <!-- Shop by Category with Dropdown -->
+                                <li class="dropdown">
+                                    <a href="#category"><i class="fa-solid fa-list"></i> Shop by Category <i
+                                            class="fa-solid fa-chevron-down"></i></a>
+                                    <ul class="dropdown-menu">
+                                        <li class="dropdown-item">
+                                            <a href="#">Category 1 <i class="fa-solid fa-chevron-right"></i></a>
+                                            <ul class="submenu">
+                                                <li><a href="#">Subcategory 1.1</a></li>
+                                                <li><a href="#">Subcategory 1.2</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown-item">
+                                            <a href="#">Category 2 <i class="fa-solid fa-chevron-right"></i></a>
+                                            <ul class="submenu">
+                                                <li><a href="#">Subcategory 2.1</a></li>
+                                                <li><a href="#">Subcategory 2.2</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown-item">
+                                            <a href="#">Category 3 <i class="fa-solid fa-chevron-right"></i></a>
+                                            <ul class="submenu">
+                                                <li><a href="#">Subcategory 3.1</a></li>
+                                                <li><a href="#">Subcategory 3.2</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <!-- Other menu items -->
+                                <li><a href="#brands"><i class="fa-solid fa-award"></i> Brands</a></li>
+                                <li><a href="#offers"><i class="fa-solid fa-tag"></i> Special Offers</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+            <!-- Categories Section -->
+
+        </div>
+
+        <!-- content hear -->
+        <!-- Breadcrumb -->
+        <div class="details-content">
+            <div class="special-container">
+                <nav class="breadcrumb">
+                    <a href="#">Home</a> / <a href="#">Collections</a> / <span>Galderma Cetaphil Gentle Skin Cleanser
+                        236 ML</span>
+                </nav>
+                <!-- Product Section -->
+                <div class="product-container">
+                    <!-- Product Image -->
+                    <div class="product-image">
+                        <img src="./imges/43949.jpg" alt="Cetaphil Cleanser">
+                    </div>
+
+                    <!-- Product Details -->
+                    <div class="product-details">
+                        <h1>Galderma Cetaphil Gentle Skin Cleanser 236 ML</h1>
+                        <p class="brand">CETAPHIL</p>
+                        <p class="price">102 QR</p>
+                        <div class="rating">
+                            <span>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star "></i>
+                            </span>
+                            <span>(24 Reviews)</span>
+                        </div>
+
+
+                        <p class="stock-status"><i class="fa-solid fa-check"></i> In stock</p>
+
+                        <!-- Quantity Selector -->
+                        <div class="quantity-selector">
+                            <div class="left">
+                                <button class="btn-selector">-</button>
+                                <input type="text" value="1">
+                                <button class="btn-selector">+</button>
+                            </div>
+
+                            <button class="add-to-cart">Add to Cart</button>
+
+                        </div>
+
+                        <!-- Add to Cart Button -->
+
+
+                        <p class="delivery-info-clock"> <i class="fa-solid fa-clock"></i> Home Delivery within 1 - 2 Hours</p>
+
+                        <!-- Product Description -->
+                        <div class="product-description">
+                            <div class="accordion">
+                                <div class="accordion-item">
+                                    <h3 class="accordion-title">Description<span class="arrow">▼</span></h3>
+
+                                    <div class="accordion-content">
+                                        <p>
+                                            Our best-seller and fan favorite—a mild, non-irritating formulation that
+                                            soothes skin as it cleans.
+                                            An award-winning classic that's gentle and...
+                                            <a href="#">Read more</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- Accordion Section -->
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <h3 class="accordion-title">Delivery & Returns <span class="arrow">▼</span></h3>
+                                <div class="accordion-content">
+                                    <p>This product will be delivered within 1-2 hours, and you can return it within 7
+                                        days of purchase.</p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h3 class="accordion-title">Payment Options <span class="arrow">▼</span></h3>
+                                <div class="accordion-content">
+                                    <p>We accept various payment methods including Visa, MasterCard, and cash on
+                                        delivery.</p>
+                                    <ul>
+                                        <li>Cash/Card on Delivery ✅</li>
+                                        <li>Online Payment via Credit/Debit card ✅</li>
+                                        <li> Apple Pay & Google Pay ✅</li>
+                                        <li>Pay with Insurance ✅</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="wishlist-btn"><i class="fa-regular fa-heart"></i> Add to Wishlist</button>
+                    </div>
+                </div>
+
+                <!-- Frequently Purchased Together Section -->
+                <div class="frequently-purchased">
+                    <h2>Frequently Purchased Together</h2>
+                    <div class="frequently-content">
+                        <div class="purchased-together">
+                            <img src="./imges/46341.jpg" alt="Product 1">
+                            <span class="plus">+</span>
+                            <img src="./imges/42217.jpg" alt="Product 2">
+                            <span class="plus">+</span>
+                            <img src="./imges/23851_030100e7-e3e8-42ae-bdc5-817cf07cd7bb.jpg" alt="Product 3">
+                        </div>
+                        <div class="action">
+                            <p class="total">Total Price: <span class="mark">214.00 QR</span></p>
+                            <button class="add-all-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-history">
+                    <h3>
+                        <input type="checkbox" name="" id="" checked>
+                        This product: Galderma Cetaphil Gentle Skin Cleanser 236 ML 102.00 QR
+                    </h3>
+                    <h3>
+                        <input type="checkbox" name="" id="" checked>
+                        Galderma Antibacterial Soap Bar 127 GM 56.00 QR
+                    </h3>
+                    <h3>
+                        <input type="checkbox" name="" id="" checked>
+                        Galderma Cetaphil Gentle Cleansing Soap Bar 127 GM 56.00 QR
+                    </h3>
+
+
+
+                </div>
+
+                <!-- liked Section -->
+                <div class="liked-content">
+                
+                    <section class="categories" id="category">
+                        <h2>You may also like </h2>
+                        <div class="swiper-container category-swiper">
+                            <div class="swiper-wrapper">
+                                <!-- Slide 1 -->
+                                 
+                                
+                                
+                                <div class="swiper-slide">
+                                    <div class="product-card">
+                                        <div class="product-head">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                        <img class="slide-img" src="./imges/pro1 (1).jpg" alt="Offers Zone">
+                                        <p class="product-details">This is a brief description of product 1.</p>
+                                        <div class="product-footer">
+                                            <p class="product-price">$29.99</p>
+                                            <i class="fa-solid fa-plus"></i>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                                <!-- Slide 2 -->
+                                <div class="swiper-slide">
+                                    <div class="product-card">
+                                        <div class="product-head">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                        <img class="slide-img" src="./imges/pro1 (2).jpg" alt="Korean Beauty">
+                                        <p class="product-details">This is a brief description of product 2.</p>
+                                        <div class="product-footer">
+                                            <p class="product-price">$29.99</p>
+                                            <i class="fa-solid fa-plus"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Slide 3 -->
+                                <div class="swiper-slide">
+                                    <div class="product-card">
+                                        <div class="product-head">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                        <img class="slide-img" src="./imges/pro1 (3).jpg" alt="Skin Care Offers">
+                                        <p class="product-details">This is a brief description of product 3.</p>
+                                        <div class="product-footer">
+                                            <p class="product-price">$29.99</p>
+                                            <i class="fa-solid fa-plus"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="product-card">
+                                        <div class="product-head">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                        <img class="slide-img" src="./imges/pro1 (1).jpg" alt="Offers Zone">
+                                        <p class="product-details">This is a brief description of product 1.</p>
+                                        <div class="product-footer">
+                                            <p class="product-price">$29.99</p>
+                                            <i class="fa-solid fa-plus"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Slide 2 -->
+                                <div class="swiper-slide">
+                                    <div class="product-card">
+                                        <div class="product-head">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                        <img class="slide-img" src="./imges/pro1 (2).jpg" alt="Korean Beauty">
+                                        <p class="product-details">This is a brief description of product 2.</p>
+                                        <div class="product-footer">
+                                            <p class="product-price">$29.99</p>
+                                            <i class="fa-solid fa-plus"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Slide 3 -->
+                                <div class="swiper-slide">
+                                    <div class="product-card">
+                                        <div class="product-head">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                        <img class="slide-img" src="./imges/pro1 (3).jpg" alt="Skin Care Offers">
+                                        <p class="product-details">This is a brief description of product 3.</p>
+                                        <div class="product-footer">
+                                            <p class="product-price">$29.99</p>
+                                            <i class="fa-solid fa-plus"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="product-card">
+                                        <div class="product-head">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                        <img class="slide-img" src="./imges/pro1 (1).jpg" alt="Offers Zone">
+                                        <p class="product-details">This is a brief description of product 1.</p>
+                                        <div class="product-footer">
+                                            <p class="product-price">$29.99</p>
+                                            <i class="fa-solid fa-plus"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Slide 2 -->
+                                <div class="swiper-slide">
+                                    <div class="product-card">
+                                        <div class="product-head">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                       
+                                        <img class="slide-img" src="./imges/pro1 (2).jpg" alt="Korean Beauty">
+                                        <p class="product-details">This is a brief description of product 2.</p>
+                                        <div class="product-footer">
+                                            <p class="product-price">$29.99</p>
+                                            <i class="fa-solid fa-plus"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Slide 3 -->
+                                <div class="swiper-slide">
+                                    <div class="product-card">
+                                        <div class="product-head">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                        <img class="slide-img" src="./imges/pro1 (3).jpg" alt="Skin Care Offers">
+                                        <p class="product-details">This is a brief description of product 3.</p>
+                                        <div class="product-footer">
+                                            <p class="product-price">$29.99</p>
+                                            <i class="fa-solid fa-plus"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Add more slides as needed -->
+                            </div>
+                            <!-- Pagination -->
+                            
+                            <div class="swiper-button-prev"></div> <!-- سهم لليسار -->
+                            <div class="swiper-button-next"></div> <!-- سهم لليمين -->
+                        </div>
+                    </section>
+                </div>
+                <!-- realted Section -->
+                <div class="realted-content">
+                
+                    <section class="categories" id="category">
+                        <h2>Related products</h2>
+                        <div class="swiper-container category-swiper">
+                            <div class="swiper-wrapper">
+                                <!-- Slide 1 -->
+                                 
+                                
+                                
+                                <div class="swiper-slide">
+                                    <div class="product-card">
+                                        <div class="product-head">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                        <img class="slide-img" src="./imges/pro1 (1).jpg" alt="Offers Zone">
+                                        <p class="product-details">This is a brief description of product 1.</p>
+                                        <div class="product-footer">
+                                            <p class="product-price">$29.99</p>
+                                            <i class="fa-solid fa-plus"></i>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                                <!-- Slide 2 -->
+                                <div class="swiper-slide">
+                                    <div class="product-card">
+                                        <div class="product-head">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                        <img class="slide-img" src="./imges/pro1 (2).jpg" alt="Korean Beauty">
+                                        <p class="product-details">This is a brief description of product 2.</p>
+                                        <div class="product-footer">
+                                            <p class="product-price">$29.99</p>
+                                            <i class="fa-solid fa-plus"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Slide 3 -->
+                                <div class="swiper-slide">
+                                    <div class="product-card">
+                                        <div class="product-head">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                        <img class="slide-img" src="./imges/pro1 (3).jpg" alt="Skin Care Offers">
+                                        <p class="product-details">This is a brief description of product 3.</p>
+                                        <div class="product-footer">
+                                            <p class="product-price">$29.99</p>
+                                            <i class="fa-solid fa-plus"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="product-card">
+                                        <div class="product-head">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                        <img class="slide-img" src="./imges/pro1 (1).jpg" alt="Offers Zone">
+                                        <p class="product-details">This is a brief description of product 1.</p>
+                                        <div class="product-footer">
+                                            <p class="product-price">$29.99</p>
+                                            <i class="fa-solid fa-plus"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Slide 2 -->
+                                <div class="swiper-slide">
+                                    <div class="product-card">
+                                        <div class="product-head">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                        <img class="slide-img" src="./imges/pro1 (2).jpg" alt="Korean Beauty">
+                                        <p class="product-details">This is a brief description of product 2.</p>
+                                        <div class="product-footer">
+                                            <p class="product-price">$29.99</p>
+                                            <i class="fa-solid fa-plus"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Slide 3 -->
+                                <div class="swiper-slide">
+                                    <div class="product-card">
+                                        <div class="product-head">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                        <img class="slide-img" src="./imges/pro1 (3).jpg" alt="Skin Care Offers">
+                                        <p class="product-details">This is a brief description of product 3.</p>
+                                        <div class="product-footer">
+                                            <p class="product-price">$29.99</p>
+                                            <i class="fa-solid fa-plus"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="product-card">
+                                        <div class="product-head">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                        <img class="slide-img" src="./imges/pro1 (1).jpg" alt="Offers Zone">
+                                        <p class="product-details">This is a brief description of product 1.</p>
+                                        <div class="product-footer">
+                                            <p class="product-price">$29.99</p>
+                                            <i class="fa-solid fa-plus"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Slide 2 -->
+                                <div class="swiper-slide">
+                                    <div class="product-card">
+                                        <div class="product-head">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                       
+                                        <img class="slide-img" src="./imges/pro1 (2).jpg" alt="Korean Beauty">
+                                        <p class="product-details">This is a brief description of product 2.</p>
+                                        <div class="product-footer">
+                                            <p class="product-price">$29.99</p>
+                                            <i class="fa-solid fa-plus"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Slide 3 -->
+                                <div class="swiper-slide">
+                                    <div class="product-card">
+                                        <div class="product-head">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                        <img class="slide-img" src="./imges/pro1 (3).jpg" alt="Skin Care Offers">
+                                        <p class="product-details">This is a brief description of product 3.</p>
+                                        <div class="product-footer">
+                                            <p class="product-price">$29.99</p>
+                                            <i class="fa-solid fa-plus"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Add more slides as needed -->
+                            </div>
+                            <!-- Pagination -->
+                            
+                            <div class="swiper-button-prev"></div> <!-- سهم لليسار -->
+                            <div class="swiper-button-next"></div> <!-- سهم لليمين -->
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="feature-container">
+            <div class="special-container">
+                <div class="features-section">
+                    <div class="feature">
+                        <h3>Fast Delivery </h3>
+                        <p>We'll deliver your order within two <br> hours maximum.</p>
+                    </div>
+                    <div class="feature">
+                        <h3>Easy Returns </h3>
+                        <p>Not happy with your order, enjoy our easy <br> returns process.</p>
+                    </div>
+                    <div class="feature">
+                        <h3>Live Support </h3>
+                        <p>Kulud's support agents are available <br> 24 hours to help.</p>
+                    </div>
+                    <div class="feature">
+                        <h3>Cash on Delivery </h3>
+                        <p>Skip the online payment and pay <br> on delivery.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end content -->
+        <div class="footer-section">
+            <div class="special-container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <h5>Payment Options:</h5>
+                        <div class="payment-icons">
+                            <img src="./imges/google.png" alt="GPay">
+                            <img src="./imges/app.png" alt="Apple Pay">
+                            <img src="./imges/cash.png" alt="MasterCard">
+                            <img src="./imges/cash-on-delivery-icon_v4.webp" alt="MasterCard">
+                            <!-- <img src="" alt="MasterCard"> -->
+
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <h5>#1 Pharmacy in Qatar.</h5>
+                        <p>Kulud is the largest pharmacy chain in Qatar with over 100 branches and counting,
+                            featuring a collection of over 12,000 products.</p>
+                        <div class="social-icons">
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fas fa-mobile-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <h5>SUPPORT</h5>
+                        <a href="#">Contact Us</a><br>
+                        <a href="#">Kulud Blogs</a><br>
+                        <a href="#">Store Locator</a><br>
+                        <a href="#">Corporate Website</a>
+                    </div>
+                    <div class="col-md-3">
+                        <h5>POLICIES</h5>
+                        <a href="#">Exchanges & Returns</a><br>
+                        <a href="#">Privacy Policy</a><br>
+                        <a href="#">Terms & Conditions</a>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-6">
+                        <div class="app-icons">
+                            <img src="./imges/google.png" alt="Google Play">
+                            <img src="./imges/app.png" alt="App Store">
+                        </div>
+                        <div class="theqa ">
+                            <img src="./imges/theqa.svg">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <button id="scrollToTop" style="display: none;"><i class="fa-solid fa-arrow-up"></i></button>
+
+    </div>
+
+    </div>
+
+</body>
+
+</html>

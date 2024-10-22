@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تصميم متجر</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./css/all.css"/>
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css"/>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js" defer></script>
+    <script src="./script.js" defer></script>
+    <!-- Add these lines in the <head> section -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: Arial, sans-serif;
+        overflow-x: hidden;
+    }
+    .container{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .navbar{
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .top-bar {
+        background-color: #4caf50;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 30px;
+    }
+    
+    .left-icons a {
+        color: white;
+        margin-right: 10px;
+    }
+    
+    .delivery-info {
+        font-size: 14px;
+    }
+    
+    .language select {
+        padding: 5px;
+        background-color: #4caf50;
+        color: white;
+        border: none;
+    }
+    
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #f8f8f8;
+        padding: 15px 30px;
+    }
+    
+    .logo img {
+        height: 50px;
+    }
+    
+    .search-bar {
+        
+        margin: 0 20px;
+        display: flex;
+        align-items: center;
+    }
+    
+    .search-bar input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    
+    .search-bar button {
+        background-color: #e91e63;
+        border: none;
+        color: white;
+        padding: 10px 15px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+    .nav-links a {
+        margin: 0 10px;
+        color: #333;
+        text-decoration: none;
+    }
+    
+    .categories {
+        margin: 20px 0;
+    }
+    
+    .swiper-container {
+        width: 100%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    
+    .swiper-slide {
+        background-color: white;
+        text-align: center;
+        padding: 20px;
+    }
+    
+    .swiper-slide img {
+        width: 100%;
+        border-radius: 10px;
+        object-fit: cover;
+    }
+    
+    .carousel .swiper-container2 {
+        width: 100%;
+        padding: 20px;
+    }
+    
+    .carousel .swiper-slide {
+        text-align: center;
+    }
+    
+    .carousel .swiper-slide img {
+        width: 100%;
+        border-radius: 10px;
+    }
+    .delivery-info {
+        width: 100%;
+        background-color: #f8f9fa;
+        padding: 10px 0;
+        overflow: hidden;
+        position: relative;
+    }
+    .top-bar .info{
+        width: 40%;
+    }
+    .delivery-info {
+        font-size: 18px;
+        color: #333;
+        text-align: center; /* Center text */
+        padding: 10px 0; /* Add padding for better visibility */
+        background-color: #4caf50;
+    }
+    .carousel-control-next,
+    .carousel-control-prev {
+        position: relative; /* Ensure arrows are positioned relative to the text */
+        top: -10px; /* Adjust as necessary */
+        margin-left: 10px; /* Add spacing from the text */
+    }
+    .footer-section {
+        background-color: #80c342;
+        color: #000;
+        padding-top: 70px ;
+        padding-bottom: 70px;
+    }
+    .footer-section h5 {
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+    .footer-section a {
+        color: #000;
+        text-decoration: none;
+    }
+    .footer-section a:hover {
+        text-decoration: underline;
+    }
+    .footer-section .payment-icons img,
+    .footer-section .app-icons img {
+        width: 90px;
+        margin-right: 10px;
+        height: 40px;
+        margin-bottom: 30px;
+    }
+    .footer-section .app-icons {
+        margin-top: 20px;
+    }
+    .footer-section .social-icons a {
+        font-size: 24px;
+        margin-right: 10px;
+        color: #000;
+    }
+    .footer-section .app-icons img {
+        width: 130px;
+        height: 50px;
+    }
+    .theqa img{
+        width: 270px;
+        margin-left: -12px;
+    }
+    .section {
+        display: none;
+    }
+    .active {
+        display: block;
+    }
+</style>
+<body>
+<div class="content">
+    <div >
+        
+    <!-- Header Section -->
+    <header>
+       
+            <div class="top-bar">
+               
+                    <div class="left-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fas fa-mobile-alt"></i></a>
+                    </div>
+                    
+                    <div id="deliveryCarousel" class="info carousel slide" data-ride="carousel" data-interval="false">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="delivery-info">
+                                    Free Delivery on orders over 99 QAR!
+                                    <a class="carousel-control-next" href="#deliveryCarousel" role="button" data-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="delivery-info">
+                                    Special offer: Buy 2 get 1 free!
+                                    <a class="carousel-control-next" href="#deliveryCarousel" role="button" data-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#deliveryCarousel" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        </a>
+                    </div>
+                    
+                    <div class="language">
+                        <select>
+                            <option value="en">English</option>
+                            <option value="ar">العربية</option>
+                        </select>
+                    </div>
+                
+           
+            </div>
+      
+  
+
+        <div class="navbar">
+            <div class="logo">
+                <img src="./imges/logo.png" alt="Logo">
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search for...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            <div class="nav-links">
+                <a href="#">Account</a>
+                <a href="#">Wishlist</a>
+                <a href="#">Cart (0)</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Categories Section -->
+    <section class="categories">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="./imges/pro1 (1).jpg" alt="Offers Zone">
+                    <p>Shop Now</p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./imges/pro1 (2).jpg" alt="Korean Beauty">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./imges/pro1 (3).jpg" alt="Skin Care Offers">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./imges/pro1 (4).jpg" alt="Hair Care Offers">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./imges/pro1 (5).jpg" alt="Hair Care Offers">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./imges/pro1 (6).jpg" alt="Hair Care Offers">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./imges/pro1 (7).jpg" alt="Hair Care Offers">
+                </div>
+                <!-- Add more slides as needed -->
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    
+
+   
+
+     <header>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li  onclick="showSection('category-section')">Shop by Category</a></li>
+            <li onclick="showSection('brands-section')">Brands</></li>
+            <li onclick="showSection('special-offers-section')">Special Offers</></li>
+        </ul>
+    </nav>
+  </header>
+
+<!-- Special Offers Section -->
+ <div class="sections-container">
+    <div class="special-container">
+        <section id="category-section" class="section active">
+            <h2>Shop by Category</h2>
+            <div class="swiper-container category-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./imges/21475.jpg" alt="Medicines">
+                        <p>Medicines</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./imges/21895.jpg" alt="Vitamins & Supps">
+                        <p>Vitamins & Supps</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./imges/22330.jpg" alt="Skin Care & Derma">
+                        <p>Skin Care & Derma</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./imges/22334.jpg" alt="Hair Care">
+                        <p>Hair Care</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./imges/21475.jpg" alt="Medicines">
+                        <p>Medicines</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./imges/21895.jpg" alt="Vitamins & Supps">
+                        <p>Vitamins & Supps</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./imges/22330.jpg" alt="Skin Care & Derma">
+                        <p>Skin Care & Derma</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./imges/22334.jpg" alt="Hair Care">
+                        <p>Hair Care</p>
+                    </div>
+                    <!-- Add more slides as needed -->
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+        
+        <!-- Brands Section -->
+        <section id="brands-section" class="section">
+            <h2>Brands</h2>
+            <div class="swiper-container brands-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./imges/22368.jpg" alt="Brand 1">
+                        <p>Brand 1</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./imges/22535.jpg" alt="Brand 2">
+                        <p>Brand 2</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./imges/23851_030100e7-e3e8-42ae-bdc5-817cf07cd7bb.jpg" alt="Brand 3">
+                        <p>Brand 3</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./imges/22368.jpg" alt="Brand 1">
+                        <p>Brand 1</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./imges/22535.jpg" alt="Brand 2">
+                        <p>Brand 2</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./imges/23851_030100e7-e3e8-42ae-bdc5-817cf07cd7bb.jpg" alt="Brand 3">
+                        <p>Brand 3</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./imges/22368.jpg" alt="Brand 1">
+                        <p>Brand 1</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./imges/22535.jpg" alt="Brand 2">
+                        <p>Brand 2</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./imges/23851_030100e7-e3e8-42ae-bdc5-817cf07cd7bb.jpg" alt="Brand 3">
+                        <p>Brand 3</p>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+        
+        <!-- Special Offers Section -->
+        <section id="special-offers-section" class="section">
+            <h2>Special Offers</h2>
+            <div class="swiper-container offers-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./imges/26260.jpg" alt="Offer 1">
+                        <p>Offer 1</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./imges/27454.jpg" alt="Offer 2">
+                        <p>Offer 2</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./imges/28893.jpg" alt="Offer 3">
+                        <p>Offer 3</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./imges/26260.jpg" alt="Offer 1">
+                        <p>Offer 1</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./imges/27454.jpg" alt="Offer 2">
+                        <p>Offer 2</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./imges/28893.jpg" alt="Offer 3">
+                        <p>Offer 3</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./imges/26260.jpg" alt="Offer 1">
+                        <p>Offer 1</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./imges/27454.jpg" alt="Offer 2">
+                        <p>Offer 2</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./imges/28893.jpg" alt="Offer 3">
+                        <p>Offer 3</p>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+    </div>
+ </div>
+
+
+<div class="footer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h5>Payment Options:</h5>
+                    <div class="payment-icons">
+                        <img src="./imges/google.png" alt="GPay">
+                        <img src="./imges/app.png" alt="Apple Pay">
+                        <img src="./imges/cash.png" alt="MasterCard">
+                        <img src="./imges/cash-on-delivery-icon_v4.webp" alt="MasterCard">
+                        <!-- <img src="" alt="MasterCard"> -->
+                        
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <h5>#1 Pharmacy in Qatar.</h5>
+                    <p>Kulud is the largest pharmacy chain in Qatar with over 100 branches and counting, featuring a collection of over 12,000 products.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fas fa-mobile-alt"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <h5>SUPPORT</h5>
+                    <a href="#">Contact Us</a><br>
+                    <a href="#">Kulud Blogs</a><br>
+                    <a href="#">Store Locator</a><br>
+                    <a href="#">Corporate Website</a>
+                </div>
+                <div class="col-md-3">
+                    <h5>POLICIES</h5>
+                    <a href="#">Exchanges & Returns</a><br>
+                    <a href="#">Privacy Policy</a><br>
+                    <a href="#">Terms & Conditions</a>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-6">
+                    <div class="app-icons">
+                        <img src="./imges/google.png" alt="Google Play">
+                        <img src="./imges/app.png" alt="App Store">
+                    </div>
+                    <div class="theqa col-md-6 text-right ">
+                        <img src="./imges/theqa.svg">
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+<script>
+    // تهيئة Swiper لقسم Categories
+var categoriesSwiper = new Swiper('.swiper-container', {
+    slidesPerView: 4, // عرض 4 صور في كل مرة
+    spaceBetween: 30, // المسافة بين الصور
+ 
+    loop: true, // لجعل التمرير مستمر
+    autoplay: {
+        delay: 3000, // التأخير بين التمريرات
+        disableOnInteraction: false, // يستمر التشغيل التلقائي حتى بعد التفاعل
+    },
+});
+
+let swiperInstances = {};
+
+// وظيفة لإظهار القسم المطلوب
+function showSection(sectionId) {
+    // إخفاء جميع الأقسام
+    document.querySelectorAll('.section').forEach(section => {
+        section.classList.remove('active');
+    });
+
+    // إظهار القسم المختار
+    document.getElementById(sectionId).classList.add('active');
+
+    // تفعيل swiper في القسم الذي تم إظهاره
+    if (!swiperInstances[sectionId]) {
+        initSwiper(sectionId);
+    }
+}
+
+// تهيئة swiper عند إظهار الأقسام
+function initSwiper(sectionId) {
+    let swiperSelector = '';
+    if (sectionId === 'category-section') {
+        swiperSelector = '.category-swiper';
+    } else if (sectionId === 'brands-section') {
+        swiperSelector = '.brands-swiper';
+    } else if (sectionId === 'special-offers-section') {
+        swiperSelector = '.offers-swiper';
+    }
+
+    swiperInstances[sectionId] = new Swiper(swiperSelector, {
+        slidesPerView: 4, // عرض 4 صور في وقت واحد
+        spaceBetween: 30, // المسافة بين الصور
+     
+        loop: false,
+        autoplay: {
+            delay: 3000, // تأخير بين كل تمريرة (3 ثواني)
+            disableOnInteraction: false, // استمرار التشغيل التلقائي حتى بعد التفاعل مع السلايدر
+        },
+    });
+}
+
+// إظهار القسم الأول افتراضيًا
+document.addEventListener('DOMContentLoaded', function() {
+    showSection('category-section'); // قسم الفئات نشط افتراضيًا
+});
+</script>
+</body>
+</html>
