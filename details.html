@@ -27,7 +27,6 @@
                                 <a href="#"><i class="fab fa-instagram"></i></a>
                                 <a href="#"><i class="fas fa-mobile-alt"></i></a>
                             </div>
-
                             <div class="delevery">
                                 <div class="swiper-container delevery-swiper">
                                     <div class="swiper-wrapper">
@@ -51,6 +50,7 @@
                                     <div class="swiper-button-next delevery-swiper-next"></div> <!-- سهم لليمين -->
                                 </div>
                             </div>
+                            
 
                             <div class="language">
                                 <select>
@@ -71,59 +71,58 @@
                                 <img src="./imges/logo.png" alt="Logo">
                             </div>
                             <div class="search-bar">
-                                <input type="text" placeholder="Search for...">
-                                <button><i class="fas fa-search"></i></button>
+                                <input type="text" placeholder="  Search for..." >
+                                
                             </div>
                             <div class="nav-links">
-                                <a href="#"><i class="fa-regular fa-user"></i> Account</a>
-                                <a href="#"><i class="fa-regular fa-heart"></i> Wishlist</a>
-                                <a href="#"><i class="fa-solid fa-cart-shopping"></i> Cart (0)</a>
+                                <a href="#"><i class="fa-regular fa-user"></i>    Account</a>
+                                <a href="#"><i class="fa-regular fa-heart"></i>  Wishlist</a>
+                                <a href="#" class="active"><i class="fa-solid fa-cart-shopping"></i>  Cart (0)</a>
                             </div>
                         </div>
                     </div>
 
                 </div>
                 <div class="header-container">
-
-                    <div class="special-container">
-
-                        <!-- Navigation Bar -->
-                        <nav>
-                            <ul class="section-links">
-                                <!-- Shop by Category with Dropdown -->
-                                <li class="dropdown">
-                                    <a href="#category"><i class="fa-solid fa-list"></i> Shop by Category <i
-                                            class="fa-solid fa-chevron-down"></i></a>
-                                    <ul class="dropdown-menu">
-                                        <li class="dropdown-item">
-                                            <a href="#">Category 1 <i class="fa-solid fa-chevron-right"></i></a>
-                                            <ul class="submenu">
-                                                <li><a href="#">Subcategory 1.1</a></li>
-                                                <li><a href="#">Subcategory 1.2</a></li>
+                
+                        <div class="special-container">
+                            
+                                <!-- Navigation Bar -->
+                                <nav>
+                                    <ul class="section-links">
+                                        <!-- Shop by Category with Dropdown -->
+                                        <li class="dropdown">
+                                            <a href="#category"><i class="fa-solid fa-list"></i> Shop by Category <i class="fa-solid fa-chevron-down"></i></a>
+                                            <ul class="dropdown-menu">
+                                                <li class="dropdown-item">
+                                                    <a href="#">Category 1 <i class="fa-solid fa-chevron-right"></i></a>
+                                                    <ul class="submenu">
+                                                        <li><a href="#">Subcategory 1.1</a></li>
+                                                        <li><a href="#">Subcategory 1.2</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="dropdown-item">
+                                                    <a href="#">Category 2 <i class="fa-solid fa-chevron-right"></i></a>
+                                                    <ul class="submenu">
+                                                        <li><a href="#">Subcategory 2.1</a></li>
+                                                        <li><a href="#">Subcategory 2.2</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="dropdown-item">
+                                                    <a href="#">Category 3 <i class="fa-solid fa-chevron-right"></i></a>
+                                                    <ul class="submenu">
+                                                        <li><a href="#">Subcategory 3.1</a></li>
+                                                        <li><a href="#">Subcategory 3.2</a></li>
+                                                    </ul>
+                                                </li>
                                             </ul>
                                         </li>
-                                        <li class="dropdown-item">
-                                            <a href="#">Category 2 <i class="fa-solid fa-chevron-right"></i></a>
-                                            <ul class="submenu">
-                                                <li><a href="#">Subcategory 2.1</a></li>
-                                                <li><a href="#">Subcategory 2.2</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="dropdown-item">
-                                            <a href="#">Category 3 <i class="fa-solid fa-chevron-right"></i></a>
-                                            <ul class="submenu">
-                                                <li><a href="#">Subcategory 3.1</a></li>
-                                                <li><a href="#">Subcategory 3.2</a></li>
-                                            </ul>
-                                        </li>
+                                        <!-- Other menu items -->
+                                        <li><a href="#brands"><i class="fa-solid fa-award"></i> Brands</a></li>
+                                        <li><a href="#category"><i class="fa-solid fa-tag"></i> Special Offers</a></li>
                                     </ul>
-                                </li>
-                                <!-- Other menu items -->
-                                <li><a href="#brands"><i class="fa-solid fa-award"></i> Brands</a></li>
-                                <li><a href="#offers"><i class="fa-solid fa-tag"></i> Special Offers</a></li>
-                            </ul>
-                        </nav>
-                    </div>
+                                </nav>
+                        </div>
                 </div>
             </header>
             <!-- Categories Section -->
@@ -263,6 +262,202 @@
                 </div>
 
                 <!-- liked Section -->
+                <div class="reviews-section">
+                    <div class="reviews-header">
+                        <div class="reviews-summary">
+                            <span class="stars">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </span>
+                            <span>24 Reviews</span>
+                            <span class="dropdown-arrow" id="reviewDropdownToggle">&#9662;</span>
+                        </div>
+                    
+                        <div class="review-dropdown" id="reviewDropdown" style="display: none;">
+                            <ul>
+                                <li><a href="#">1 Star Reviews</a></li>
+                                <li><a href="#">2 Star Reviews</a></li>
+                                <li><a href="#">3 Star Reviews</a></li>
+                                <li><a href="#">4 Star Reviews</a></li>
+                                <li><a href="#">5 Star Reviews</a></li>
+                            </ul>
+                        </div>
+                    
+                        <div class="review-actions">
+                            <button class="write-review" id="openModal">Write a review</button>
+                            <button class="filter-reviews"><i class="fa fa-sliders-h"></i></button>
+                        </div>
+                        <div class="modal" id="reviewModal" style="display: none;">
+                            <div class="modal-content">
+                                <span class="close" id="closeModal">&times;</span>
+                                <h2>How would you rate this item?</h2>
+                                <div class="stars" id="starRating">
+                                    <i class="fa fa-star" data-value="1"></i>
+                                    <i class="fa fa-star" data-value="2"></i>
+                                    <i class="fa fa-star" data-value="3"></i>
+                                    <i class="fa fa-star" data-value="4"></i>
+                                    <i class="fa fa-star" data-value="5"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                
+                    <div class="reviews-grid">
+                        <!-- Each review starts here -->
+                        <div class="review-item">
+                            <div class="review-header">
+                                <strong>Ridma W.</strong> <span class="verified"><i class="fa fa-check-circle"></i> Verified</span>
+                                <span class="review-date">12/06/2024</span>
+                            </div>
+                            <div class="review-rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <div class="review-content">
+                                <p>Great services. They deliver my medicines to doorsteps. It was very convenient for me. Thank you very much.</p>
+                            </div>
+                        </div>
+                        <div class="review-item">
+                            <div class="review-header">
+                                <strong>Ridma W.</strong> <span class="verified"><i class="fa fa-check-circle"></i> Verified</span>
+                                <span class="review-date">12/06/2024</span>
+                            </div>
+                            <div class="review-rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <div class="review-content">
+                                <p>Great services. They deliver my medicines to doorsteps. It was very convenient for me. Thank you very much.</p>
+                            </div>
+                        </div>
+                        <div class="review-item">
+                            <div class="review-header">
+                                <strong>Ridma W.</strong> <span class="verified"><i class="fa fa-check-circle"></i> Verified</span>
+                                <span class="review-date">12/06/2024</span>
+                            </div>
+                            <div class="review-rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <div class="review-content">
+                                <p>Great services. They deliver my medicines to doorsteps. It was very convenient for me. Thank you very much.</p>
+                            </div>
+                        </div>
+                        <div class="review-item">
+                            <div class="review-header">
+                                <strong>Ridma W.</strong> <span class="verified"><i class="fa fa-check-circle"></i> Verified</span>
+                                <span class="review-date">12/06/2024</span>
+                            </div>
+                            <div class="review-rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <div class="review-content">
+                                <p>Great services. They deliver my medicines to doorsteps. It was very convenient for me. Thank you very much.</p>
+                            </div>
+                        </div>
+                        <div class="review-item">
+                            <div class="review-header">
+                                <strong>Ridma W.</strong> <span class="verified"><i class="fa fa-check-circle"></i> Verified</span>
+                                <span class="review-date">12/06/2024</span>
+                            </div>
+                            <div class="review-rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <div class="review-content">
+                                <p>Great services. They deliver my medicines to doorsteps. It was very convenient for me. Thank you very much.</p>
+                            </div>
+                        </div>
+                        <div class="review-item">
+                            <div class="review-header">
+                                <strong>Ridma W.</strong> <span class="verified"><i class="fa fa-check-circle"></i> Verified</span>
+                                <span class="review-date">12/06/2024</span>
+                            </div>
+                            <div class="review-rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <div class="review-content">
+                                <p>Great services. They deliver my medicines to doorsteps. It was very convenient for me. Thank you very much.</p>
+                            </div>
+                        </div>
+                        <div class="review-item">
+                            <div class="review-header">
+                                <strong>Ridma W.</strong> <span class="verified"><i class="fa fa-check-circle"></i> Verified</span>
+                                <span class="review-date">12/06/2024</span>
+                            </div>
+                            <div class="review-rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <div class="review-content">
+                                <p>Great services. They deliver my medicines to doorsteps. It was very convenient for me. Thank you very much.</p>
+                            </div>
+                        </div>
+                        <div class="review-item">
+                            <div class="review-header">
+                                <strong>Ridma W.</strong> <span class="verified"><i class="fa fa-check-circle"></i> Verified</span>
+                                <span class="review-date">12/06/2024</span>
+                            </div>
+                            <div class="review-rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <div class="review-content">
+                                <p>Great services. They deliver my medicines to doorsteps. It was very convenient for me. Thank you very much.</p>
+                            </div>
+                        </div>
+                        <div class="review-item">
+                            <div class="review-header">
+                                <strong>Ridma W.</strong> <span class="verified"><i class="fa fa-check-circle"></i> Verified</span>
+                                <span class="review-date">12/06/2024</span>
+                            </div>
+                            <div class="review-rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <div class="review-content">
+                                <p>Great services. They deliver my medicines to doorsteps. It was very convenient for me. Thank you very much.</p>
+                            </div>
+                        </div>
+                        <!-- Add more reviews in the same structure -->
+                        <!-- Repeat for each review -->
+                    </div>
+                </div>
+                
                 <div class="liked-content">
                 
                     <section class="categories" id="category">

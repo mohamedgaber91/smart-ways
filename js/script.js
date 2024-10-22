@@ -2,16 +2,20 @@
 
 var categoriesSwiper = new Swiper('.products-swiper', {
     slidesPerView:7, // عرض 4 صور في كل مرة
-    spaceBetween: 30, // المسافة بين الصور
+    spaceBetween: 0, // المسافة بين الصور
     navigation:false,
     loop: true, // لجعل التمرير مستمر
-    autoplay: {
-        delay: 3000, // التأخير بين التمريرات
-        disableOnInteraction: false, // يستمر التشغيل التلقائي حتى بعد التفاعل
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    navigation: {
+        nextEl: '.product-next',
+        prevEl: '.product-prev',
     },
     breakpoints: {
         1200: {
-            slidesPerView: 5,
+            slidesPerView: 7,
         },
         992: {
             slidesPerView: 4,
@@ -26,6 +30,25 @@ var categoriesSwiper = new Swiper('.products-swiper', {
             slidesPerView: 1,
         }
     }
+});
+var largSwiper = new Swiper('.larg-swiper', {
+    slidesPerView:1, // عرض 4 صور في كل مرة
+    spaceBetween: 0, // المسافة بين الصور
+    navigation:false,
+    loop: true, // لجعل التمرير مستمر
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    navigation: {
+        nextEl: '.larg-next',
+        prevEl: '.larg-prev',
+    },
+    autoplay: {
+        delay: 3000, // التأخير بين التمريرات
+        disableOnInteraction: false, // يستمر التشغيل التلقائي حتى بعد التفاعل
+    },
+ 
 });
 
 var categoriesSwiper = new Swiper('.category-swiper', {
