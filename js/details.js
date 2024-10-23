@@ -39,12 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     toggleReviewContent();
 });
-// تعريف المتغيرات في النطاق العام
-// const dropdownToggle = document.querySelector('#reviewDropdownToggle');
-// const dropdownMenu = document.querySelector('#reviewDropdown');
 
-// دالة العرض/الإخفاء
-// دالة لعرض وإخفاء القائمة المنسدلة
 document.addEventListener('DOMContentLoaded', () => {
     const reviewDropdownToggle = document.querySelector('#reviewDropdownToggle');
     const reviewDropdown = document.querySelector('#reviewDropdown');

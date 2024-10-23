@@ -215,12 +215,11 @@ border: none;
     font-size: 15px;
 }
 .brands-swiper .swiper-wrapper  .swiper-slide {
-    background-color: white;
+
     border-radius: 10px;
     border: 1px solid #d0cdcd;
-    transform: translateZ(0);
-    font-size: 15px;
-    
+
+    padding: 0;
     cursor: pointer;
 }
 
@@ -392,15 +391,15 @@ width: 100%;
 width: 100%;
 height: 283px;
 }
-/* جعل السلايدر بعرض الشاشة */
+
 .larg-container {
-    width: 100vw; /* عرض الحاوية كامل الشاشة */
-    overflow: hidden; /* إخفاء أي جزء زائد عن الحاوية */
+    width: 100vw; 
+    overflow: hidden; 
 }
 
 .swiper-container.larg-swiper {
-    width: 100%; /* عرض السلايدر 100% من الشاشة */
-    height: auto; /* السماح للسلايدر بضبط ارتفاعه تلقائيًا حسب المحتوى */
+    width: 100%; 
+    height: auto;
 }
 
 
@@ -427,7 +426,7 @@ height: 283px;
     position: relative;
 }
 
-/* لضبط القوائم الفرعية */
+
 .submenu {
     top: 0;
     left: 100%;
@@ -435,13 +434,11 @@ height: 283px;
     background-color: #f8f8f8;
 }
 
-/* عرض القائمة عند تمرير الماوس */
 .dropdown:hover .dropdown-menu,
 .dropdown-item:hover .submenu {
     display: block;
 }
 
-/* تنسيق الروابط داخل القوائم */
 .section-links a {
     text-decoration: none;
     color: #333;
@@ -452,7 +449,7 @@ height: 283px;
 .section-links a:hover {
     background-color: #f0f0f0;
 }
-/* لضبط الشكل الأساسي لقائمة القسم */
+
 .section-links {
     list-style: none;
     display: flex;
@@ -464,7 +461,7 @@ height: 283px;
     position: relative;
 }
 
-/* إخفاء القائمة الفرعية بشكل افتراضي */
+
 .dropdown-menu, .submenu {
     display: none;
     position: absolute;
@@ -482,7 +479,6 @@ height: 283px;
 }
 
 
-/* لضبط القوائم الفرعية */
 .submenu {
     top: 0;
     left: 100%;
@@ -490,13 +486,12 @@ height: 283px;
     background-color: #f8f8f8;
 }
 
-/* عرض القائمة عند تمرير الماوس */
 .dropdown:hover .dropdown-menu,
 .dropdown-item:hover .submenu {
     display: block;
 }
 
-/* تنسيق الروابط داخل القوائم */
+
 .section-links a {
     text-decoration: none;
     color: #333;
@@ -510,7 +505,6 @@ height: 283px;
     background-color: #f0f0f0;
 }
 
-/* تنسيق الأيقونات */
 .fa-chevron-down {
     margin-left: 10px;
 }
@@ -519,7 +513,6 @@ height: 283px;
     margin-left: 5px;
 }
 
-/* تنسيق السهم في القائمة الفرعية */
 .dropdown-item > a {
     position: relative;
     padding-right: 10px;
@@ -662,15 +655,13 @@ cursor: pointer;
 }
 
 #scrollToTop:hover {
-    background-color: #0056b3; /* لون الزر عند التمرير */
+    background-color: #0056b3;
 }
 
-/* تأكد من أن الحاوية الخاصة بالسويبر لها position: relative */
 .swiper-container {
     position: relative;
 }
 
-/* نمط الأسهم */
 .swiper-button-prev, .swiper-button-next {
     /* border-radius: 50%; */
     border: 1px solid black;
@@ -692,9 +683,7 @@ cursor: pointer;
     cursor: pointer;
 }
 
-/* سهم لليسار */
 
-/* لضمان أن تكون الأسهم في المقدمة فوق الشرائح */
 .swiper-button-prev::after, .swiper-button-next::after {
     font-size: 18px;
     /* color: black; */
@@ -838,7 +827,6 @@ cursor: pointer;
         width: 60%;
     }
 }
-/* تكبير النصوص والعناصر للشاشات الكبيرة */
 @media (min-width: 1200px) {
     .product-card {
       font-size: 1.2rem;
@@ -849,7 +837,6 @@ cursor: pointer;
     }
   }
   
-  /* تعديل العرض للشاشات المتوسطة */
   @media (min-width: 768px) and (max-width: 1199px) {
     .product-card {
       font-size: 1rem;
@@ -860,7 +847,6 @@ cursor: pointer;
     }
   }
   
-  /* تنسيق للشاشات الصغيرة */
   @media (max-width: 767px) {
     .product-card {
       font-size: 0.9rem;
@@ -870,12 +856,10 @@ cursor: pointer;
       height: auto;
     }
     
-    /* تعديل الهوامش لتناسب العرض */
     .swiper-slide {
       padding: 10px;
     }
   }
-  /* Media Queries للشاشات الصغيرة */
 @media (max-width: 767px) {
     .features-section {
         display: block;
@@ -885,7 +869,7 @@ cursor: pointer;
         color: #ffffff91;
     }
     .feature {
-      width: 100%; /* عرض 100% في الشاشات الصغيرة */
+      width: 100%; 
       margin-bottom: 50px;
     }
     .social-icons {
@@ -914,10 +898,9 @@ cursor: pointer;
     }
   }
   
-  /* Media Queries للشاشات المتوسطة */
   @media (min-width: 768px) and (max-width: 1199px) {
     .feature {
-      flex: 0 1 calc(50% - 20px); /* نصف العرض لكل عنصر */
+      flex: 0 1 calc(50% - 20px); 
     }
   
     .feature h3 {
@@ -936,10 +919,10 @@ cursor: pointer;
     }
   }
   
-  /* تنسيق للشاشات الكبيرة */
+
   @media (min-width: 1200px) {
     .feature {
-      flex: 0 1 calc(25% - 20px); /* ربع العرض لكل عنصر */
+      flex: 0 1 calc(25% - 20px); 
     }
     
     .feature h3 {
@@ -951,7 +934,6 @@ cursor: pointer;
     }
   }
 
-  /* تخصيص Navigation */
 .larg-next, .larg-prev,.product-next, .product-prev,.category-next,.category-prev {
     background-color: #fff;
     border-radius: 50%;
@@ -978,7 +960,6 @@ cursor: pointer;
     left: 10px;
 }
 
-/* تخصيص Pagination */
 .swiper-pagination-bullets .swiper-pagination-bullet {
     background-color: #e5e5e5;
     width: 12px;
@@ -989,13 +970,13 @@ cursor: pointer;
 }
 
 .swiper-pagination-bullets .swiper-pagination-bullet-active {
-    background-color: var(--second-color); /* اللون الأحمر للنقطة النشطة */
-    width: 40px; /* تكبير النقطة النشطة */
+    background-color: var(--second-color); 
+    width: 40px; 
     border-radius: 20px;
 }
 
 .swiper-pagination {
-    bottom: 10px; /* موقع الـ pagination بالنسبة إلى الأسفل */
+    bottom: 10px; 
     display: flex;
     justify-content: center;
     align-items: center;

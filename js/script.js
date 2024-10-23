@@ -1,18 +1,14 @@
-// تهيئة Swiper لقسم Categories
 
 var categoriesSwiper = new Swiper('.products-swiper', {
-    slidesPerView:7, // عرض 4 صور في كل مرة
-    spaceBetween: 0, // المسافة بين الصور
+    slidesPerView:7, 
+    spaceBetween: 0, 
     navigation:false,
-    loop: true, // لجعل التمرير مستمر
+    loop: true, 
     pagination: {
         el: '.swiper-pagination',
         clickable: true,
     },
-    navigation: {
-        nextEl: '.product-next',
-        prevEl: '.product-prev',
-    },
+
     breakpoints: {
         1200: {
             slidesPerView: 7,
@@ -32,10 +28,10 @@ var categoriesSwiper = new Swiper('.products-swiper', {
     }
 });
 var largSwiper = new Swiper('.larg-swiper', {
-    slidesPerView:1, // عرض 4 صور في كل مرة
-    spaceBetween: 0, // المسافة بين الصور
+    slidesPerView:1, 
+    spaceBetween: 0, 
     navigation:false,
-    loop: true, // لجعل التمرير مستمر
+    loop: true,
     pagination: {
         el: '.swiper-pagination',
         clickable: true,
@@ -45,27 +41,20 @@ var largSwiper = new Swiper('.larg-swiper', {
         prevEl: '.larg-prev',
     },
     autoplay: {
-        delay: 3000, // التأخير بين التمريرات
-        disableOnInteraction: false, // يستمر التشغيل التلقائي حتى بعد التفاعل
+        delay: 3000, 
+        disableOnInteraction: false, 
     },
  
 });
 
 var categoriesSwiper = new Swiper('.category-swiper', {
-    slidesPerView:5, // عرض 4 صور في كل مرة
-    spaceBetween: 30, // المسافة بين الصور
-    // pagination: {
-    //     el: '.swiper-pagination',
-    //     clickable: true,
-    // },
-    // loop: false, // لجعل التمرير مستمر
-    // autoplay: {
-    //     delay: 3000, // التأخير بين التمريرات
-    //     disableOnInteraction: false, // يستمر التشغيل التلقائي حتى بعد التفاعل
-    // },
+    slidesPerView:5, 
+    spaceBetween: 30, 
+  
+  
     navigation: {
-        nextEl: '.swiper-button-next', // ربط السهم لليمين
-        prevEl: '.swiper-button-prev'  // ربط السهم لليسار
+        nextEl: '.swiper-button-next', 
+        prevEl: '.swiper-button-prev'  
     },
     breakpoints: {
         1200: {
@@ -86,14 +75,11 @@ var categoriesSwiper = new Swiper('.category-swiper', {
     }
 });
 var brandsSwiper = new Swiper('.brands-swiper', {
-    slidesPerView: 7, // عرض 4 صور في كل مرة
-    spaceBetween: 30, // المسافة بين الصور
+    slidesPerView: 7, 
+    spaceBetween: 30, 
 
-    loop: false, // لجعل التمرير مستمر
-    // autoplay: {
-    //     delay: 3000, // التأخير بين التمريرات
-    //     disableOnInteraction: false, // يستمر التشغيل التلقائي حتى بعد التفاعل
-    // },
+    loop: false,
+
     navigation: {
         nextEl: '.brands-swiper-next',
         prevEl: '.brands-swiper-prev',
@@ -117,21 +103,19 @@ var brandsSwiper = new Swiper('.brands-swiper', {
     }
 });
 var deliverySwiper = new Swiper('.delevery-swiper', {
-    slidesPerView: 1, // عدد الشرائح الظاهرة في كل مرة
-    spaceBetween: 30, // المسافة بين الشرائح
-    loop: false, // لجعل التمرير مستمر
+    slidesPerView:1,
+    spaceBetween: 30, 
+    loop: false, 
    
     navigation: {
-        nextEl: '.delevery-swiper-next', // سهم لليمين
-        prevEl: '.delevery-swiper-prev'  // سهم لليسار
+        nextEl: '.delevery-swiper-next', 
+        prevEl: '.delevery-swiper-prev'  
     },
  
 });
 
-// الحصول على الزر
 const scrollToTopButton = document.getElementById("scrollToTop");
 
-// إظهار الزر عند التمرير لأسفل
 window.onscroll = function() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
         scrollToTopButton.style.display = "block";
@@ -140,11 +124,10 @@ window.onscroll = function() {
     }
 };
 
-// التمرير إلى الأعلى عند النقر على الزر
 scrollToTopButton.onclick = function() {
     window.scrollTo({
         top: 0,
-        behavior: "smooth" // لجعل التمرير سلسًا
+        behavior: "smooth" 
     });
 };
 // Select all accordion titles
@@ -168,17 +151,14 @@ accordionTitles.forEach(title => {
         });
     });
 });
-// الحصول على جميع عناصر الأكورديون
 const accordionHeaders = document.querySelectorAll('.accordion-header');
 
 accordionHeaders.forEach(header => {
     header.addEventListener('click', function() {
         const content = this.nextElementSibling;
 
-        // التبديل بين إضافة وإزالة الفئة 'active' للمحتوى
         content.classList.toggle('active');
 
-        // التبديل بين إضافة وإزالة الفئة 'open' للعنوان (للسهم)
         this.classList.toggle('open');
     });
 });

@@ -30,7 +30,8 @@ a:hover {
     display: flex;
     margin: 0 auto;
     padding: 20px;
-    gap: 10%;
+    width: 90%;
+    gap: 5%;
     border-radius: 10px;
    
 }
@@ -39,7 +40,7 @@ a:hover {
     background-color: #fff;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 
+ 
 }
 
 .product-image img {
@@ -54,7 +55,7 @@ a:hover {
 }
 
 h1 {
-    font-size: 24px;
+    font-size: 31px;
     margin-bottom: 10px;
 }
 
@@ -148,7 +149,7 @@ h1 {
 
 .delivery-info-clock {
     background-color: #f6f6f6;
-    width: 90%;
+    width: 100%;
     margin-bottom: 70px;
     margin: auto;
     text-align: center;
@@ -188,7 +189,7 @@ h1 {
 .wishlist-btn {
     background-color: white;
     color: black;
-    width: 90%;
+    width: 100%;
     border: 1px solid #891f2b;
     cursor: pointer;
     margin: auto;
@@ -309,7 +310,6 @@ span.mark {
 .accordion-item.active .accordion-content {
     display: block; /* Show content when active */
 }
-/* أنماط العنوان */
 .accordion-header {
     cursor: pointer;
     display: flex;
@@ -325,20 +325,17 @@ span.mark {
     transition: transform 0.3s ease;
 }
 
-/* إخفاء المحتوى في البداية */
 .accordion-content {
     display: none;
     margin-top: 10px;
 }
 
-/* أنماط لعرض المحتوى عند الفتح */
 .accordion-content.active {
     display: block;
 }
 
-/* عند الفتح، يدور السهم للأعلى */
 .accordion-header.open .accordion-icon {
-    transform: rotate(180deg); /* يدور السهم للأعلى */
+    transform: rotate(180deg); 
 }
 
 .product-history{
@@ -358,40 +355,34 @@ margin-top: 100px;
 }
 
 
-/* تأكد من أن الحاوية الخاصة بالسويبر لها position: relative */
 .swiper-container {
     position: relative;
 }
 
-/* نمط الأسهم */
+
 .swiper-button-prev, .swiper-button-next {
-    /* background-color: ; */
-    /* border-radius: 50%; */
-    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+    
     color: black;
     font-size: 18px;
-    /* height: 40px; */
-    /* width: 40px; */
+
     display: flex;
     align-items: center;
     justify-content: center;
     position: absolute;
-    top: 50%; /* تحديد موقعها في منتصف ارتفاع السويبر */
-    transform: translateY(-50%); /* لجعل السهم في منتصف الارتفاع تمامًا */
+    top: 50%;
+    transform: translateY(-50%); 
     z-index: 10;
     cursor: pointer;
 }
 
 
 
-/* لضمان أن تكون الأسهم في المقدمة فوق الشرائح */
 .swiper-button-prev::after, .swiper-button-next::after {
     font-size: 18px;
-    /* color: white; */
+ 
 }
 
 
-/* وسائل الإعلام للعرض على الأجهزة الصغيرة */
 @media (max-width: 1000px) {
   
     .product-container {
@@ -400,9 +391,9 @@ margin-top: 100px;
     }
     .quantity-selector {
         display: block;
-        /* align-items: center; */
+      
         margin-bottom: 44px;
-        /* grid-template-columns: 50% 50%; */
+      
     }
     .reviews-header {
         display: block;
@@ -434,11 +425,11 @@ margin-top: 100px;
      
     }
     .product-details {
-        flex: 2; /* السماح للتفاصيل بملء المساحة */
+        flex: 2; 
     }
 
     .quantity-selector {
-        flex-direction: row; /* ترتيب العناصر أفقيًا */
+        flex-direction: row; 
     }
     .delivery-info-clock {
        
@@ -634,7 +625,7 @@ margin-top: 100px;
     margin-left: 5px;
 }
 .review-dropdown.show {
-    display: block; /* عرض الـdropdown عند الحاجة */
+    display: block; 
 }
 
 .review-actions {
@@ -646,7 +637,7 @@ button.show-more-btn {
     padding: 10px;
 }
 .modal {
-    display: none; /* إخفاء الموديل بشكل افتراضي */
+    display: none; 
     position: fixed;
     z-index: 1;
     left: 0;
@@ -654,7 +645,7 @@ button.show-more-btn {
     width: 100%; 
     height: 100%; 
     overflow: auto; 
-    background-color: rgba(0, 0, 0, 0.5); /* خلفية مظللة */
+    background-color: rgba(0, 0, 0, 0.5); 
 }
 
 .modal-content {
@@ -695,7 +686,7 @@ button.show-more-btn {
 }
 
 i.fa.fa-star.selected {
-    color: gold; /* اللون عند التحديد */
+    color: gold;
 }
 .review-dropdown {
     position: absolute;
@@ -790,6 +781,6 @@ span.show-rate {
 @media (max-width: 480px) {
  
     .review-dropdown {
-        width: 100%; /* لضمان استجابة القائمة المنسدلة */
+        width: 100%; 
     }
 }
