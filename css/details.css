@@ -404,6 +404,19 @@ margin-top: 100px;
         margin-bottom: 44px;
         /* grid-template-columns: 50% 50%; */
     }
+    .reviews-header {
+        display: block;
+
+    }
+    .reviews-summary {
+      
+        margin-bottom: 20px;
+    }
+    .review-dropdown {
+
+        width: 100%;
+   
+    }
     .product-image {
         margin-bottom: 20px;
         width: 100%;
@@ -677,9 +690,106 @@ button.show-more-btn {
 .stars i {
     font-size: 18px;
 }
-
-
-.stars i.selected {
-    color: gold; /* اللون عند التحديد */
+.modal .modal-content .stars i{
+    color: gray;
 }
 
+i.fa.fa-star.selected {
+    color: gold; /* اللون عند التحديد */
+}
+.review-dropdown {
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ddd;
+    width: 409px;
+    z-index: 10;
+    margin-top: 10px;
+    padding: 10px;
+    line-height: 2.5;
+    display: none;
+}
+
+.review-dropdown ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.review-dropdown ul li {
+    padding: 10px;
+    display: flex;
+    cursor: pointer;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2px;
+    /* background-color: gray; */
+    margin-bottom: 5px;
+}
+.review-dropdown h3{
+    text-align: center;
+    margin-top: 25px;
+}
+.review-dropdown h3 i.active-star{
+color: gold;
+font-size: 22px;
+}
+i.fa.fa-star.not-active {
+    color: gainsboro;
+}
+.review-dropdown ul li h4{
+    font-size: 15px;
+}
+span.show-rate-active {
+    background-color: #808080c2;
+    width: 208px;
+    height: 11px;
+    border-radius: 4px;
+}
+span.show-rate {
+    background-color: #d6c1c15c;
+    width: 208px;
+    height: 11px;
+    border-radius: 4px;
+}
+.review-dropdown ul li:hover {
+    background-color: #f1f1f1;
+}
+
+
+@media (max-width: 768px) {
+   
+    
+ 
+
+    .review-header {
+        display: block;
+  
+    }
+    .reviews-header {
+        display: block;
+        
+    }
+    .review-header strong {
+        font-size: 16px;
+        color: #333;
+        display: block;
+        margin-bottom: 10px;
+    }
+    .review-dropdown ul li {
+      
+        align-items: baseline;
+  
+    }
+    span.show-rate-active,   span.show-rate{
+
+        display: none;
+     
+    }
+}
+
+@media (max-width: 480px) {
+ 
+    .review-dropdown {
+        width: 100%; /* لضمان استجابة القائمة المنسدلة */
+    }
+}
