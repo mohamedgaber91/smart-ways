@@ -117,10 +117,9 @@ border: none;
 .nav-links a {
     padding: 20px;
     border-radius: 39px;
-  
     display: inline;
-    margin: 10px 11px;
-    transition: 0.5s;
+margin-right: 2px; 
+   transition: 0.5s;
     text-align: center;
     text-decoration: none;
     border: 1px solid var(--second-color);
