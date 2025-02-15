@@ -868,9 +868,13 @@ height: 200px;
         margin-top: 62px;
         text-align: center;
         display: grid;
-        padding: 10px;
+        gap:8px ;
         grid-template-columns: 30% 30% 30%;
     }
+    .offers .row .col{
+        margin-bottom: 37px;
+    }
+
     .offers .row .col p{
         font-size: 20px;
         margin-top: 10px;
