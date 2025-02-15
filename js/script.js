@@ -1,6 +1,6 @@
 
 var categoriesSwiper = new Swiper('.products-swiper', {
-    slidesPerView:7, 
+    slidesPerView:4, 
     spaceBetween: 0, 
     navigation:false,
     loop: true, 
@@ -11,7 +11,7 @@ var categoriesSwiper = new Swiper('.products-swiper', {
 
     breakpoints: {
         1200: {
-            slidesPerView: 7,
+            slidesPerView: 4,
         },
         992: {
             slidesPerView: 4,
@@ -48,7 +48,7 @@ var largSwiper = new Swiper('.larg-swiper', {
 });
 
 var categoriesSwiper = new Swiper('.category-swiper', {
-    slidesPerView:5, 
+    slidesPerView:4, 
     spaceBetween: 30, 
   
   
@@ -58,7 +58,7 @@ var categoriesSwiper = new Swiper('.category-swiper', {
     },
     breakpoints: {
         1200: {
-            slidesPerView: 5,
+            slidesPerView: 4,
         },
         992: {
             slidesPerView: 4,
@@ -86,10 +86,10 @@ var brandsSwiper = new Swiper('.brands-swiper', {
     },
     breakpoints: {
         1200: {
-            slidesPerView: 6,
+            slidesPerView: 7,
         },
         992: {
-            slidesPerView: 5,
+            slidesPerView: 4,
         },
         768: {
             slidesPerView: 4,
