@@ -647,6 +647,7 @@ cursor: pointer;
     border: none;
     width: 50px;
     height: 50px;
+    z-index: 1000;
     font-weight: bolder;
     border-radius: 50%;
     font-size: 20px;
@@ -718,7 +719,7 @@ cursor: pointer;
         display: none;
     }
     .delevery {
-        width: 100%;
+        width: 90%;
       height :  50px;
       padding-top: 10px;
     }
@@ -792,6 +793,10 @@ cursor: pointer;
     nav ul.section-links li {
         margin-bottom: 10px;
     }
+    /* .section-links li:nth-child(-n+2) {
+        display: none;
+    } */
+    
 }
 
 /* Further adjustments for very small screens */
@@ -1070,3 +1075,70 @@ padding-bottom: 10px;    }
     background-color: #f0f0f0;
 }
 
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -350px; 
+    width: 250px;
+    height: 100%;
+    background: var(--main-color);
+    color: white;
+    transition: 0.3s;
+    padding-top: 60px;
+    z-index: 1000;
+}
+
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.sidebar.active {
+    left: 0;
+}
+
+.sidebar nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar nav ul li {
+    padding: 15px;
+    border-bottom: 1px solid #444;
+}
+
+.sidebar nav ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+.sidebar nav ul li i{
+margin-right: 7px;
+} 
+
+.menu-toggle {
+    display: none;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1100;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+    .section-links{
+    }
+}
