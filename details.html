@@ -52,12 +52,12 @@
                             </div>
                             
 
-                            <div class="language">
+                            <!-- <div class="language">
                                 <select>
                                     <option value="en">English</option>
                                     <option value="ar">العربية</option>
                                 </select>
-                            </div>
+                            </div> -->
 
 
                         </div>
@@ -68,16 +68,16 @@
                     <div class="special-container">
                         <div class="navbar">
                             <div class="logo">
-                                <img src="./imges/logo.png" alt="Logo">
+                              <a href="./index.html"> <img src="./imges/logo.png" alt="Logo"></a> 
                             </div>
                             <div class="search-bar">
-                                <input type="text" placeholder="  Search for..." >
+                                <input class="nav-input-search" type="text" placeholder="  Search for..." >
                                 
                             </div>
                             <div class="nav-links">
-                                <a href="#"> <i class="fa-solid fa-right-to-bracket"></i>   logout</a>
-                                <a href="#"><i class="fa-regular fa-heart"></i>  Wishlist</a>
-                                <a href="#" class="active"><i class="fa-solid fa-cart-shopping"></i>  Cart (0)</a>
+                                <a href="./login.html"><i class="fa-regular fa-user"></i>    login</a>
+                                <a href="./register.html"><i class="fa-solid fa-right-to-bracket"></i>    register</a>
+                                <a href="./cart.html"><i class="fa-solid fa-cart-shopping"></i>  Cart (0)</a>
                             </div>
                         </div>
                     </div>
@@ -92,7 +92,7 @@
                                     <ul class="section-links">
                                         <!-- Shop by Category with Dropdown -->
                                         <li class="dropdown">
-                                            <a href="#category"><i class="fa-solid fa-list"></i> Shop by Category <i class="fa-solid fa-chevron-down"></i></a>
+                                            <a href="./index.html#category"><i class="fa-solid fa-list"></i> Shop by Category <i class="fa-solid fa-chevron-down"></i></a>
                                             <ul class="dropdown-menu">
                                                 <li class="dropdown-item">
                                                     <a href="#">Category 1 <i class="fa-solid fa-chevron-right"></i></a>
@@ -118,8 +118,10 @@
                                             </ul>
                                         </li>
                                         <!-- Other menu items -->
-                                        <li><a href="#brands"><i class="fa-solid fa-award"></i> Brands</a></li>
-                                        <li><a href="#category"><i class="fa-solid fa-tag"></i> Special Offers</a></li>
+                                        <li><a href="./index.html#brands"><i class="fa-solid fa-award"></i> Brands</a></li>
+                                        <li><a href="./index.html#category"><i class="fa-solid fa-tag"></i> Special Offers</a></li>
+                                        <li><a href="./about.html"><i class="fas fa-info-circle"></i> About</a></li>
+                                        <li><a href="./contact.html"><i class="fa-solid fa-phone"></i>  Contact</a></li>
                                     </ul>
                                 </nav>
                         </div>
@@ -204,40 +206,7 @@
                 </div>
                 
 
-                <!-- Frequently Purchased Together Section -->
-                <div class="frequently-purchased">
-                    <h2>Frequently Purchased Together</h2>
-                    <div class="frequently-content">
-                        <div class="purchased-together">
-                            <img src="./imges/46341.jpg" alt="Product 1">
-                            <span class="plus">+</span>
-                            <img src="./imges/42217.jpg" alt="Product 2">
-                            <span class="plus">+</span>
-                            <img src="./imges/23851_030100e7-e3e8-42ae-bdc5-817cf07cd7bb.jpg" alt="Product 3">
-                        </div>
-                        <div class="action">
-                            <p class="total">Total Price: <span class="mark">214.00 QR</span></p>
-                            <button class="add-all-to-cart">Add to Cart</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="product-history">
-                    <h3>
-                        <input type="checkbox" name="" id="" checked>
-                        This product: Galderma Cetaphil Gentle Skin Cleanser 236 ML 102.00 QR
-                    </h3>
-                    <h3>
-                        <input type="checkbox" name="" id="" checked>
-                        Galderma Antibacterial Soap Bar 127 GM 56.00 QR
-                    </h3>
-                    <h3>
-                        <input type="checkbox" name="" id="" checked>
-                        Galderma Cetaphil Gentle Cleansing Soap Bar 127 GM 56.00 QR
-                    </h3>
-
-
-
-                </div>
+          
 
                 <!-- liked Section -->
                 <div class="reviews-section">
@@ -360,9 +329,10 @@
                         <!-- Each review starts here -->
                         <div class="review-item">
                             <div class="review-header">
-                                <strong>Ridma W.</strong> <span class="verified"><i class="fa fa-check-circle"></i> Verified</span>
-                                <span class="review-date">12/06/2024</span>
+                                <strong>Ridma W mohamed.</strong> <span class="verified"><i class="fa fa-check-circle"></i> Verified</span>
                             </div>
+                            <span class="review-date">12/06/2024</span>
+
                             <div class="review-rating">
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
@@ -376,9 +346,10 @@
                         </div>
                         <div class="review-item">
                             <div class="review-header">
-                                <strong>Ridma W.</strong> <span class="verified"><i class="fa fa-check-circle"></i> Verified</span>
-                                <span class="review-date">12/06/2024</span>
+                                <strong>Ridma W mohamed.</strong> <span class="verified"><i class="fa fa-check-circle"></i> Verified</span>
                             </div>
+                            <span class="review-date">12/06/2024</span>
+
                             <div class="review-rating">
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
@@ -390,169 +361,11 @@
                                 <p>Great services. They deliver my medicines to doorsteps. It was very convenient for me. Thank you very much.</p>
                             </div>
                         </div>
-                        <div class="review-item">
-                            <div class="review-header">
-                                <strong>Ridma W.</strong> <span class="verified"><i class="fa fa-check-circle"></i> Verified</span>
-                                <span class="review-date">12/06/2024</span>
-                            </div>
-                            <div class="review-rating">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </div>
-                            <div class="review-content">
-                                <p>Great services. They deliver my medicines to doorsteps. It was very convenient for me. Thank you very much.</p>
-                            </div>
-                        </div>
-                        <div class="review-item">
-                            <div class="review-header">
-                                <strong>Ridma W.</strong> <span class="verified"><i class="fa fa-check-circle"></i> Verified</span>
-                                <span class="review-date">12/06/2024</span>
-                            </div>
-                            <div class="review-rating">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </div>
-                            <div class="review-content">
-                                <p>Great services. They deliver my medicines to doorsteps. It was very convenient for me. Thank you very much.</p>
-                            </div>
-                        </div>
-                        <div class="review-item">
-                            <div class="review-header">
-                                <strong>Ridma W.</strong> <span class="verified"><i class="fa fa-check-circle"></i> Verified</span>
-                                <span class="review-date">12/06/2024</span>
-                            </div>
-                            <div class="review-rating">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </div>
-                            <div class="review-content">
-                                <p>Great services. They deliver my medicines to doorsteps. It was very convenient for me. Thank you very much.</p>
-                            </div>
-                        </div>
-                        <div class="review-item">
-                            <div class="review-header">
-                                <strong>Ridma W.</strong> <span class="verified"><i class="fa fa-check-circle"></i> Verified</span>
-                                <span class="review-date">12/06/2024</span>
-                            </div>
-                            <div class="review-rating">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </div>
-                            <div class="review-content">
-                                <p>Great services. They deliver my medicines to doorsteps. It was very convenient for me. Thank you very much.</p>
-                            </div>
-                        </div>
-                        <div class="review-item">
-                            <div class="review-header">
-                                <strong>Ridma W.</strong> <span class="verified"><i class="fa fa-check-circle"></i> Verified</span>
-                                <span class="review-date">12/06/2024</span>
-                            </div>
-                            <div class="review-rating">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </div>
-                            <div class="review-content">
-                                <p>Great services. They deliver my medicines to doorsteps. It was very convenient for me. Thank you very much.</p>
-                            </div>
-                        </div>
-                        <div class="review-item">
-                            <div class="review-header">
-                                <strong>Ridma W.</strong> <span class="verified"><i class="fa fa-check-circle"></i> Verified</span>
-                                <span class="review-date">12/06/2024</span>
-                            </div>
-                            <div class="review-rating">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </div>
-                            <div class="review-content">
-                                <p>Great services. They deliver my medicines to doorsteps. It was very convenient for me. Thank you very much.</p>
-                            </div>
-                        </div>
-                        <div class="review-item">
-                            <div class="review-header">
-                                <strong>Ridma W.</strong> <span class="verified"><i class="fa fa-check-circle"></i> Verified</span>
-                                <span class="review-date">12/06/2024</span>
-                            </div>
-                            <div class="review-rating">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </div>
-                            <div class="review-content">
-                                <p>Great services. They deliver my medicines to doorsteps. It was very convenient for me. Thank you very much.</p>
-                            </div>
-                        </div>
-                        <div class="review-item">
-                            <div class="review-header">
-                                <strong>Ridma W.</strong> <span class="verified"><i class="fa fa-check-circle"></i> Verified</span>
-                                <span class="review-date">12/06/2024</span>
-                            </div>
-                            <div class="review-rating">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </div>
-                            <div class="review-content">
-                                <p>Great services. They deliver my medicines to doorsteps. It was very convenient for me. Thank you very much.</p>
-                            </div>
-                        </div>
-                        <div class="review-item">
-                            <div class="review-header">
-                                <strong>Ridma W.</strong> <span class="verified"><i class="fa fa-check-circle"></i> Verified</span>
-                                <span class="review-date">12/06/2024</span>
-                            </div>
-                            <div class="review-rating">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </div>
-                            <div class="review-content">
-                                <p>Great services. They deliver my medicines to doorsteps. It was very convenient for me. Thank you very much.</p>
-                            </div>
-                        </div>
-                        <div class="review-item">
-                            <div class="review-header">
-                                <strong>Ridma W.</strong> <span class="verified"><i class="fa fa-check-circle"></i> Verified</span>
-                                <span class="review-date">12/06/2024</span>
-                            </div>
-                            <div class="review-rating">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </div>
-                            <div class="review-content">
-                                <p>Great services. They deliver my medicines to doorsteps. It was very convenient for me. Thank you very much.</p>
-                            </div>
-                        </div>
-                        <!-- Add more reviews in the same structure -->
-                        <!-- Repeat for each review -->
-                    </div>
+                 
+                      
+                    
+                  
+                                           </div>
                 </div>
                 
                 <div class="liked-content">
@@ -566,21 +379,25 @@
                                 
                                 
                                 <div class="swiper-slide">
-                                    <div class="product-card">
-                                        <div class="product-head">
-                                            <i class="fa-regular fa-heart"></i>
+                                    <a href="./details.html">
+                                        <div class="product-card">
+                                            <div class="product-head">
+                                                <i class="fa-regular fa-heart"></i>
+                                            </div>
+                                            <img class="slide-img" src="./imges/pro1 (1).jpg" alt="Offers Zone">
+                                            <p class="product-details">This is a brief description of product 1.</p>
+                                            <div class="product-footer">
+                                                <p class="product-price">$29.99</p>
+                                                <i class="fa-solid fa-plus"></i>
+                                            </div>
+                                            
                                         </div>
-                                        <img class="slide-img" src="./imges/pro1 (1).jpg" alt="Offers Zone">
-                                        <p class="product-details">This is بربيربربربربربرلببربربربنؤةيسنرؤةيىرنىيبةنرىىىىىىىىىىىىىىىىىىىىىىىىىىىىىىىىىىىىىىىىىىىىىىىىىىىىىىىىىىىىىىىىىىىىىىىىىىىىىىىىىىىىىىىىىىىa brief description of product 1.</p>
-                                        <div class="product-footer">
-                                            <p class="product-price">$29.99</p>
-                                            <i class="fa-solid fa-plus"></i>
-                                        </div>
-                                        
-                                    </div>
+                                    </a>
+                                  
                                 </div>
                                 <!-- Slide 2 -->
                                 <div class="swiper-slide">
+                                    <a href="./details.html">
                                     <div class="product-card">
                                         <div class="product-head">
                                             <i class="fa-regular fa-heart"></i>
@@ -592,9 +409,11 @@
                                             <i class="fa-solid fa-plus"></i>
                                         </div>
                                     </div>
+                                </a>
                                 </div>
                                 <!-- Slide 3 -->
                                 <div class="swiper-slide">
+                                    <a href="./details.html">
                                     <div class="product-card">
                                         <div class="product-head">
                                             <i class="fa-regular fa-heart"></i>
@@ -606,8 +425,10 @@
                                             <i class="fa-solid fa-plus"></i>
                                         </div>
                                     </div>
+                                    </a>
                                 </div>
                                 <div class="swiper-slide">
+                                    <a href="./details.html">
                                     <div class="product-card">
                                         <div class="product-head">
                                             <i class="fa-regular fa-heart"></i>
@@ -619,9 +440,11 @@
                                             <i class="fa-solid fa-plus"></i>
                                         </div>
                                     </div>
+                                    </a>
                                 </div>
                                 <!-- Slide 2 -->
                                 <div class="swiper-slide">
+                                    <a href="./details.html">
                                     <div class="product-card">
                                         <div class="product-head">
                                             <i class="fa-regular fa-heart"></i>
@@ -633,9 +456,11 @@
                                             <i class="fa-solid fa-plus"></i>
                                         </div>
                                     </div>
+                                    </a>
                                 </div>
                                 <!-- Slide 3 -->
                                 <div class="swiper-slide">
+                                    <a href="./details.html">
                                     <div class="product-card">
                                         <div class="product-head">
                                             <i class="fa-regular fa-heart"></i>
@@ -647,8 +472,10 @@
                                             <i class="fa-solid fa-plus"></i>
                                         </div>
                                     </div>
+                                </a>
                                 </div>
                                 <div class="swiper-slide">
+                                    <a href="./details.html">
                                     <div class="product-card">
                                         <div class="product-head">
                                             <i class="fa-regular fa-heart"></i>
@@ -660,9 +487,11 @@
                                             <i class="fa-solid fa-plus"></i>
                                         </div>
                                     </div>
+                                </a>
                                 </div>
                                 <!-- Slide 2 -->
                                 <div class="swiper-slide">
+                                    <a href="./details.html">
                                     <div class="product-card">
                                         <div class="product-head">
                                             <i class="fa-regular fa-heart"></i>
@@ -675,9 +504,11 @@
                                             <i class="fa-solid fa-plus"></i>
                                         </div>
                                     </div>
+                                </a>
                                 </div>
                                 <!-- Slide 3 -->
                                 <div class="swiper-slide">
+                                    <a href="./details.html">
                                     <div class="product-card">
                                         <div class="product-head">
                                             <i class="fa-regular fa-heart"></i>
@@ -689,163 +520,19 @@
                                             <i class="fa-solid fa-plus"></i>
                                         </div>
                                     </div>
+                                </a>
                                 </div>
                                 
                                 <!-- Add more slides as needed -->
                             </div>
-                            <!-- Pagination -->
-                            
-                            <div class="swiper-button-prev"></div> 
-                            <div class="swiper-button-next"></div> 
+                            <!-- Navigation -->
+                            <div class="swiper-button-next product-next"></div>
+                            <div class="swiper-button-prev product-prev"></div>
                         </div>
                     </section>
                 </div>
                 <!-- realted Section -->
-                <div class="realted-content">
-                
-                    <section class="categories" id="category">
-                        <h2>Related products</h2>
-                        <div class="swiper-container category-swiper">
-                            <div class="swiper-wrapper">
-                                <!-- Slide 1 -->
-                                 
-                                
-                                
-                                <div class="swiper-slide">
-                                    <div class="product-card">
-                                        <div class="product-head">
-                                            <i class="fa-regular fa-heart"></i>
-                                        </div>
-                                        <img class="slide-img" src="./imges/pro1 (1).jpg" alt="Offers Zone">
-                                        <p class="product-details">This is a brief description of product 1.</p>
-                                        <div class="product-footer">
-                                            <p class="product-price">$29.99</p>
-                                            <i class="fa-solid fa-plus"></i>
-                                        </div>
-                                        
-                                    </div>
-                                </div>
-                                <!-- Slide 2 -->
-                                <div class="swiper-slide">
-                                    <div class="product-card">
-                                        <div class="product-head">
-                                            <i class="fa-regular fa-heart"></i>
-                                        </div>
-                                        <img class="slide-img" src="./imges/pro1 (2).jpg" alt="Korean Beauty">
-                                        <p class="product-details">This is a brief description of product 2.</p>
-                                        <div class="product-footer">
-                                            <p class="product-price">$29.99</p>
-                                            <i class="fa-solid fa-plus"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Slide 3 -->
-                                <div class="swiper-slide">
-                                    <div class="product-card">
-                                        <div class="product-head">
-                                            <i class="fa-regular fa-heart"></i>
-                                        </div>
-                                        <img class="slide-img" src="./imges/pro1 (3).jpg" alt="Skin Care Offers">
-                                        <p class="product-details">This is a brief description of product 3.</p>
-                                        <div class="product-footer">
-                                            <p class="product-price">$29.99</p>
-                                            <i class="fa-solid fa-plus"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="product-card">
-                                        <div class="product-head">
-                                            <i class="fa-regular fa-heart"></i>
-                                        </div>
-                                        <img class="slide-img" src="./imges/pro1 (1).jpg" alt="Offers Zone">
-                                        <p class="product-details">This is a brief description of product 1.</p>
-                                        <div class="product-footer">
-                                            <p class="product-price">$29.99</p>
-                                            <i class="fa-solid fa-plus"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Slide 2 -->
-                                <div class="swiper-slide">
-                                    <div class="product-card">
-                                        <div class="product-head">
-                                            <i class="fa-regular fa-heart"></i>
-                                        </div>
-                                        <img class="slide-img" src="./imges/pro1 (2).jpg" alt="Korean Beauty">
-                                        <p class="product-details">This is a brief description of product 2.</p>
-                                        <div class="product-footer">
-                                            <p class="product-price">$29.99</p>
-                                            <i class="fa-solid fa-plus"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Slide 3 -->
-                                <div class="swiper-slide">
-                                    <div class="product-card">
-                                        <div class="product-head">
-                                            <i class="fa-regular fa-heart"></i>
-                                        </div>
-                                        <img class="slide-img" src="./imges/pro1 (3).jpg" alt="Skin Care Offers">
-                                        <p class="product-details">This is a brief description of product 3.</p>
-                                        <div class="product-footer">
-                                            <p class="product-price">$29.99</p>
-                                            <i class="fa-solid fa-plus"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="product-card">
-                                        <div class="product-head">
-                                            <i class="fa-regular fa-heart"></i>
-                                        </div>
-                                        <img class="slide-img" src="./imges/pro1 (1).jpg" alt="Offers Zone">
-                                        <p class="product-details">This is a brief description of product 1.</p>
-                                        <div class="product-footer">
-                                            <p class="product-price">$29.99</p>
-                                            <i class="fa-solid fa-plus"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Slide 2 -->
-                                <div class="swiper-slide">
-                                    <div class="product-card">
-                                        <div class="product-head">
-                                            <i class="fa-regular fa-heart"></i>
-                                        </div>
-                                       
-                                        <img class="slide-img" src="./imges/pro1 (2).jpg" alt="Korean Beauty">
-                                        <p class="product-details">This is a brief description of product 2.</p>
-                                        <div class="product-footer">
-                                            <p class="product-price">$29.99</p>
-                                            <i class="fa-solid fa-plus"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Slide 3 -->
-                                <div class="swiper-slide">
-                                    <div class="product-card">
-                                        <div class="product-head">
-                                            <i class="fa-regular fa-heart"></i>
-                                        </div>
-                                        <img class="slide-img" src="./imges/pro1 (3).jpg" alt="Skin Care Offers">
-                                        <p class="product-details">This is a brief description of product 3.</p>
-                                        <div class="product-footer">
-                                            <p class="product-price">$29.99</p>
-                                            <i class="fa-solid fa-plus"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                <!-- Add more slides as needed -->
-                            </div>
-                            <!-- Pagination -->
-                            
-                            <div class="swiper-button-prev"></div> 
-                            <div class="swiper-button-next"></div> 
-                        </div>
-                    </section>
-                </div>
+            
             </div>
         </div>
 
@@ -879,14 +566,10 @@
             <div class="special-container">
                 <div class="row">
                     <div class="col-md-3">
-                        <h5>Payment Options:</h5>
-                        <div class="payment-icons">
-                            <img src="./imges/google.png" alt="GPay">
-                            <img src="./imges/app.png" alt="Apple Pay">
-                            <img src="./imges/cash.png" alt="MasterCard">
-                            <img src="./imges/cash-on-delivery-icon_v4.webp" alt="MasterCard">
-                            <!-- <img src="" alt="MasterCard"> -->
-
+                        <h5>Payment methods</h5>
+                         <img src="./imges/google.png" class="pay-img" alt="" srcset="">
+                        <div class="theqa  ">
+                            <img src="./imges/logo.png" style=" background-color:white">
                         </div>
                     </div>
                     <div class="col-md-3">
@@ -901,10 +584,9 @@
                     </div>
                     <div class="col-md-3">
                         <h5>SUPPORT</h5>
-                        <a href="#">Contact Us</a><br>
-                        <a href="#">Kulud Blogs</a><br>
-                        <a href="#">Store Locator</a><br>
-                        <a href="#">Corporate Website</a>
+                        <a href="./contact.html">Contact Us</a><br>
+                        <a href="./about.html">About Us</a><br>
+              
                     </div>
                     <div class="col-md-3">
                         <h5>POLICIES</h5>
@@ -915,13 +597,10 @@
                 </div>
                 <div class="row mt-4">
                     <div class="col-md-6">
-                        <div class="app-icons">
-                            <img src="./imges/google.png" alt="Google Play">
-                            <img src="./imges/app.png" alt="App Store">
-                        </div>
-                        <div class="theqa  ">
-                            <img src="./imges/theqa.svg">
-                        </div>
+                  
+                        <!-- <div class="theqa  ">
+                            <img src="./imges/logo.png" style=" background-color:white">
+                        </div> -->
                     </div>
 
                 </div>

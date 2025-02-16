@@ -386,7 +386,7 @@ margin-top: 100px;
 @media (max-width: 1000px) {
   
     .product-container {
-        display: block;
+        display: block !important;
      
     }
     .quantity-selector {
@@ -528,15 +528,23 @@ margin-top: 100px;
 }
 
 .review-header strong {
-    font-size: 16px;
-    color: #333;
+    font-size: 14px;
+    color: #333
 }
 
 .verified {
     color: #4caf50;
+    font-size: 15px;
+    float: inline-end;
 }
-
-.review-rating {
+.reviews-grid  span.review-date {
+    font-size: 12px;
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #00000082;
+}
+  .review-rating {
     color: #ffc107;
 }
 

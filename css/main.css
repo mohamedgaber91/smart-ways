@@ -882,11 +882,11 @@ code {
 /* ----------------------------------------------------
     Form input box
 ---------------------------------------------------- */
-input[type="text"],
+input[type="text"]:not(.nav-input-search),
 input[type="email"],
 input[type="password"],
 input[type="submit"],
-textarea {
+textarea  {
   background-color: var(--white);
   border: 2px solid;
   border-color: var(--border-color-9);
@@ -3296,9 +3296,10 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 ---------------------------------------------------- */
 .ltn__breadcrumb-area {
   background-color: var(--section-bg-1);
-  margin-bottom: 120px;
-  padding-top: 110px;
-  padding-bottom: 110px; }
+  margin-bottom: 16px;
+  padding-top: 75px; 
+  padding-bottom: 20px;
+}
 
 .ltn__breadcrumb-list ul {
   margin: 0;
@@ -4092,7 +4093,11 @@ ul.wp-block-latest-posts.is-grid.alignwide {
       margin-left: 0; }
   .ltn__video-img.ml-30,
   .ltn__video-bg-img.ml-30 {
-    margin-left: 0; } }
+    margin-left: 0; }
+    .about-us-img-wrap img{
+      display: none;
+    }
+  }
 
 /* ----------------------------------------------------
     Author Widget
@@ -8826,6 +8831,9 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 @media (max-width: 991px) {
   .section-title {
     font-size: 26px; }
+    .section-title span b{
+      font-size: 30px !important ;
+    }
   .ltn__section-title-2 .section-title {
     font-size: 40px; }
   .ltn__section-title-2 p {
@@ -9398,9 +9406,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   box-shadow: var(--ltn__box-shadow-2);
   margin-bottom: 30px; }
   .ltn__feature-item-7 .ltn__feature-icon-title {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+   
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
@@ -14370,6 +14376,9 @@ input.cart-plus-minus-box {
 @media (max-width: 767px) {
   .ltn__footer-timeline-widget {
     padding: 50px 25px 40px; }
+    .about-us-img-wrap img{
+      display:none ;
+    }
   .footer-menu-widget-2-column {
     padding-left: 0; }
   .ltn__copyright-menu {
@@ -14681,6 +14690,83 @@ input.cart-plus-minus-box {
     font-size: 14px; }
   [type="submit"].btn {
     padding: 12px 30px; } }
+
+
+
+
+
+
+.about-us-img-wrap img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.ltn__list-item-1 {
+  padding: 0;
+}
+
+.ltn__list-item-1 li {
+  list-style: none;
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+}
+
+.ltn__list-item-1 li i {
+  color: #28a745;
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.ltn__feature-area {
+  background-color: #fff;
+}
+
+.ltn__feature-item {
+  text-align: center;
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.ltn__feature-item:hover {
+  background: #e9ecef;
+}
+
+.ltn__feature-icon i {
+  font-size: 40px;
+  color: #007bff;
+  margin-bottom: 15px;
+}
+
+@media (min-width: 992px) {
+  .ltn__feature-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  }
+
+}
+
+.features-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 50px 0;
+}
+
 
 /* ----------------------------------------------------
     END

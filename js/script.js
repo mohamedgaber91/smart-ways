@@ -162,3 +162,4 @@ accordionHeaders.forEach(header => {
         this.classList.toggle('open');
     });
 });
+
